@@ -1,0 +1,40 @@
+.rSplitContainer {
+  /* border: 1px solid black; */
+  width: 50%;
+}
+.row {
+  border: 1px solid red;
+}
+.rowWrap {
+  display: flex;
+  /* border: 1px solid blue; */
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+.rowWrap:last-child {
+  margin-bottom: 0;
+}
+.row1 {
+  width: 20%;
+}
+.row2 {
+  width: 30%;
+}
+.row3 {
+  width: 40%;
+}
+.row4 {
+  width: 50%;
+}
+.row5 {
+  width: 60%;
+}
+.row6 {
+  width: 70%;
+}
+.row7 {
+  width: 80%;
+}
+.row8 {
+  width: 90%;
+}
