@@ -11,6 +11,7 @@ const Header = () => {
         <li>Pants</li>
         <li>Shirts</li>
       </ul>
+      <h1 className="storeTitle">Sonnenbrille</h1>
     </div>
   )
 }

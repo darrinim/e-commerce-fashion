@@ -1,17 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Header from './components/Header/header';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 import Home from './components/Home/home';
-import RightSplit from './components/RightSplit/rightSplit';
+import Header from './components/Header/header';
+
 
 function App() {
   return (
     <div className="App">
-      <div className="landingContainer">
-        <Header />
-         <Home />
-      </div>
+      <Header />
+      <Home />
     </div>
   );
 }

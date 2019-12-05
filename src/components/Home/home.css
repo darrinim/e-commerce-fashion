@@ -1,5 +1,13 @@
 .homeContainer {
-  border: 1px solid green;
-  display: flex;
-  justify-content: space-between;
+  /* border: 1px solid green; */
+  height: 100%;
+  width: 85%;
+  margin: 0 auto;
+}
+.homeImageWrap {
+  height: 100%;
+  width: 100%;
+}
+.homeImage {
+  width: 100%;
 }

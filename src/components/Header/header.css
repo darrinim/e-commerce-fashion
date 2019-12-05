@@ -1,11 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Baskervville|Cinzel|Cormorant+Garamond:400,500|Gupter:400,500|Josefin+Slab:400,600,700|Noto+Serif+KR:400,600|Prata|Spectral:400,500&display=swap');
+
+body {
+  background-color: #FFF7F2;
+}
+
+.headerContainer {
+  /* border: 1px solid black; */
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
 .navWrap {
   display: flex;
   list-style-type: none;
-  border: 1px solid black;
-  width: 50%;
+  /* border: 1px solid black; */
+  width: 30%;
   justify-content: space-between;
   padding: 0;
 }
 li {
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  font-size: 1.4rem;
+  padding-top: 25px;
+  font-family: 'Josefin Slab', serif;
+  font-weight: 400;
+  margin-bottom: 0;
 }
+.storeTitle {
+  font-size: 2.3rem;
+  font-family: 'Cinzel', serif;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+/*
+font-family: 'Baskervville', serif;
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Cinzel', serif;
+font-family: 'Josefin Slab', serif;
+font-family: 'Prata', serif;
+font-family: 'Spectral', serif;
+font-family: 'Noto Serif KR', serif; */

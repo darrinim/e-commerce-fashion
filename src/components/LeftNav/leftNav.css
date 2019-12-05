@@ -1,0 +1,10 @@
+.leftNavWrap {
+  list-style-type: none;
+}
+.leftNavContainer {
+  position: absolute;
+  left: 0;
+}
+.fab {
+    margin-bottom: 50px;
+}
