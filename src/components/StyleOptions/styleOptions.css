@@ -1,0 +1,50 @@
+.optContainer {
+  width: 100%;
+  height: 100%;
+}
+.optWrap {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.optionImage {
+  width: 100%;
+  height: 90%;
+  /* filter: sepia(70%); */
+  /* filter: grayscale(100%); */
+  transition: transform .5s;
+}
+.optionImage:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.styleOptionsWrap {
+  display: flex;
+  justify-content: space-around;
+}
+.styleOptions {
+  padding: 8px;
+  position: relative;
+  overflow: hidden;
+    /* box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); */
+}
+.styleOptions:hover {
+
+}
+.styleOptions:hover .styleTitle {
+  transition: color 0.5s;
+  cursor: pointer;
+  color: #f50c4c;
+  text-shadow: 1px 1px black;
+}
+.styleOptionsContainer {
+  width: 85%;
+  margin: 3% auto 0 auto;
+}
+.styleTitle {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4em;
+  color: white;
+}

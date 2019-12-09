@@ -1,0 +1,11 @@
+.ourStoryContainer {
+  height: 100%;
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+.ourStoryWrapper {
+  /* border: 1px solid black; */
+  width: 50%;
+  margin: 0 auto;
+}

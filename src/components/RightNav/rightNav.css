@@ -1,0 +1,23 @@
+/* BELOW IS FOR BOTH SIDE NAV GENERAL CSS */
+.sideNav {
+  margin: 0 auto;
+  height: 100%;
+  padding-left: 0;
+  list-style-type: none;
+  text-align: center;
+    /* border: 1px solid black; */
+}
+.rightNavContainer {
+  width: 9%;
+}
+.rightNavWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rightNavIcon {
+  writing-mode: vertical-rl;
+  /* margin-bottom: 30px; */
+  font-size: 1.3rem;
+}

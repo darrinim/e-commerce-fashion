@@ -1,10 +1,30 @@
 .leftNavWrap {
-  list-style-type: none;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .leftNavContainer {
-  position: absolute;
-  left: 0;
+  width: 9%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .fab {
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
+}
+li {
+    /* border: 1px solid black; */
+}
+
+.leftNavIcon {
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+}
+.leftNavIcon:last-child {
+  margin-bottom: 0;
+}
+.leftNavText {
+  writing-mode: vertical-rl;
 }

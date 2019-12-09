@@ -1,6 +1,7 @@
 import React from 'react';
 import './home.css';
 import LeftNav from '../../components/LeftNav/leftNav';
+import RightNav from '../../components/RightNav/rightNav';
 
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
           className="homeImage"
           />
       </div>
+      <RightNav />
     </div>
   )
 }

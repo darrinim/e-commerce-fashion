@@ -5,16 +5,8 @@ const LeftNav = () => {
 
   return(
     <div className="leftNavContainer">
-      <ul className="leftNavWrap">
-        <li>
-          <i class="fab fa-facebook"></i>
-        </li>
-        <li>
-          <i class="fab fa-instagram"></i>
-        </li>
-        <li>
-          <i class="fab fa-twitter"></i>
-        </li>
+      <ul className="leftNavWrap sideNav">
+        <li className="leftNavText">&#9400; 2019 SONNENBRILLE All Rights Reserved</li>
       </ul>
     </div>
   )

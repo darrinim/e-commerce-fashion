@@ -2,6 +2,7 @@
 
 body {
   background-color: #FFF7F2;
+    font-family: 'Josefin Slab', serif;
 }
 
 .headerContainer {
@@ -9,17 +10,19 @@ body {
   width: 85%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: flex-end;
 }
 .navWrap {
-  display: flex;
+    display: none;
+  /* display: flex; */
   list-style-type: none;
   /* border: 1px solid black; */
   width: 30%;
   justify-content: space-between;
   padding: 0;
 }
-li {
+.navLink {
   /* border: 1px solid red; */
   font-size: 1.4rem;
   padding-top: 25px;
@@ -32,6 +35,9 @@ li {
   font-family: 'Cinzel', serif;
   font-weight: 400;
   margin-bottom: 0;
+}
+.sonnen {
+  color: #f50c4c;
 }
 
 /*

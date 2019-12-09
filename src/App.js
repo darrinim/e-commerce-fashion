@@ -1,14 +1,19 @@
 import React from 'react';
-import { Grid, Row, Col } from 'react-flexbox-grid';
 import Home from './components/Home/home';
 import Header from './components/Header/header';
+import StyleOptions from './components/StyleOptions/styleOptions';
+import OurStory from './components/OurStory/ourStory';
 
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Home />
+      <div className="homeCompContainer">
+        <Home />
+      </div>
+      <StyleOptions />
+      <OurStory />
     </div>
   );
 }
