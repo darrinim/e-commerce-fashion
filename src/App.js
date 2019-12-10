@@ -3,7 +3,7 @@ import Home from './components/Home/home';
 import Header from './components/Header/header';
 import StyleOptions from './components/StyleOptions/styleOptions';
 import OurStory from './components/OurStory/ourStory';
-
+import FeaturedStyles from './components/FeaturedStyles/featuredStyles';
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
       </div>
       <StyleOptions />
       <OurStory />
+      <FeaturedStyles />
     </div>
   );
 }
