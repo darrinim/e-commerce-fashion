@@ -2,8 +2,8 @@ import React from 'react';
 import Home from './components/Home/home';
 import Header from './components/Header/header';
 import StyleOptions from './components/StyleOptions/styleOptions';
-import OurStory from './components/OurStory/ourStory';
-import FeaturedStyles from './components/FeaturedStyles/featuredStyles';
+import Hero from './components/Hero/hero';
+import CreatedDesigned from './components/CreatedDesigned/createdDesigned';
 
 function App() {
   return (
@@ -13,8 +13,8 @@ function App() {
         <Home />
       </div>
       <StyleOptions />
-      <OurStory />
-      <FeaturedStyles />
+      <CreatedDesigned />
+      <Hero />
     </div>
   );
 }

@@ -1,14 +1,14 @@
 import React from 'react';
-import './featuredStyles.css';
+import './createdDesigned.css';
 import Created from '../../components/Created/created';
 import Designed from '../../components/Designed/designed';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
-class FeaturedStyles extends React.Component {
+class CreatedDesigned extends React.Component {
 
   render() {
     return(
-      <div className="featureContainer">
+      <div className="cdContainer">
         <Created />
         <Designed />
       </div>
@@ -17,4 +17,4 @@ class FeaturedStyles extends React.Component {
 }
 
 
-export default FeaturedStyles;
+export default CreatedDesigned;

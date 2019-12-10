@@ -1,4 +1,15 @@
 .designedContainer {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "designedText designedImg";
+}
+.designedTextWrapper {
+  grid-area: designedText;
+  padding: 15px;
+}
+.designedImgWrapper {
+  grid-area: designedImg;
 }

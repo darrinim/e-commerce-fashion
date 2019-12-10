@@ -1,3 +1,24 @@
  .createdContainer {
-   display: flex;
+   display: grid;
+   width: 100%;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: auto;
+   grid-template-areas:
+     "createdImg createdText";
+ }
+ .createdImgWrapper {
+   grid-area: createdImg;
+ }
+ .createdTextWrapper {
+   grid-area: createdText;
+  padding: 15px;
+ }
+ .creDesTextTitle {
+   /* color: #f50c4c; */
+   font-size: 2em;
+   text-transform: uppercase;
+   text-shadow: 1px 1px white;
+ }
+ .creDesText {
+   font-size: 22px;
  }
