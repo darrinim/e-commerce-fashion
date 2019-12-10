@@ -1,0 +1,4 @@
+.designedContainer {
+  display: flex;
+  justify-content: space-between;
+}
