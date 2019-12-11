@@ -1,9 +1,7 @@
 import React from 'react';
 import './styleOptions.css';
-import Mens from '../../components/Mens/mens';
-import Womens from '../../components/Womens/womens';
-import Brands from '../../components/Brands/brands';
 import { optionData } from '../../e-commerce-data';
+import Fade from 'react-reveal/Fade';
 
 
 const StyleOptions = () => {
@@ -11,6 +9,10 @@ const StyleOptions = () => {
   return(
 
     <div className="styleOptionsContainer">
+    <Fade
+      distance="1px"
+      delay={600}
+      duration={2000}>
       <div className="styleOptionsWrap">
         { optionData.map( option => {
           return(
@@ -23,6 +25,7 @@ const StyleOptions = () => {
           )
         })}
       </div>
+    </Fade>
     </div>
   )
 }

@@ -31,10 +31,10 @@ body {
   margin-bottom: 0;
 }
 .storeTitle {
-  font-size: 2.3rem;
+  font-size: 2.9rem;
   font-family: 'Cinzel', serif;
   font-weight: 400;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 }
 .sonnen {
   color: #f50c4c;
