@@ -7,7 +7,7 @@ const Designed = () => {
   return(
     <div className="designedContainer">
       <div className="designedTextWrapper">
-        <h2 className="creDesTextTitle">...Designed</h2>
+        <h2 className="creDesTextTitle">... Designed</h2>
         <p className="creDesText">With you in mind and some other stuff about how we designed with you in mind and we're the shit. Here's another sentence because just the last one looked really short.</p>
       </div>
       <div className="designedImgWrapper">

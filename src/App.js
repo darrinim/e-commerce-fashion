@@ -4,6 +4,7 @@ import Header from './components/Header/header';
 import StyleOptions from './components/StyleOptions/styleOptions';
 import Hero from './components/Hero/hero';
 import CreatedDesigned from './components/CreatedDesigned/createdDesigned';
+import Reasons from './components/Reasons/reasons';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       </div>
       <StyleOptions />
       <CreatedDesigned />
+      <Reasons />
       <Hero />
     </div>
   );

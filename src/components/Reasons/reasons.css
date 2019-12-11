@@ -1,0 +1,21 @@
+.reasonsContainer {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  width: 85%;
+  margin: 5% auto 0 auto;
+  text-align: center;
+}
+.reasonImg {
+  width: 30%;
+  /* background-color: red; */
+}
+.reasonTitle {
+  font-size: 30px;
+}
+.reasonText {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 24px;
+}
