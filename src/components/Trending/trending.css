@@ -1,0 +1,24 @@
+.trendingContainer {
+  height: 100%;
+  width: 100%;
+}
+.first {
+  /* width: 10%; */
+  position: relative;
+}
+.slider-control-centerleft {
+  display: none;
+}
+.slider-control-centerright {
+  display: none;
+}
+.text {
+  position: absolute;
+  right: 0;
+}
+.trendingTitle {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 400;
+  margin-bottom: 0;
+}

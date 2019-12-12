@@ -1,17 +1,21 @@
 import React from 'react';
-import './footer.css';
+import './trending.css';
 import Carousel from 'nuka-carousel';
 
-class Footer extends React.Component {
+class Trending extends React.Component {
   state = {
   slideIndex: 0
 };
 
   render() {
   return(
-    <div className="footerContainer">
+    <div className="trendingContainer">
+      <h2 className="trendingTitle">Trending</h2>
       <Carousel
-        framePadding='10%'
+      frameOverflow
+
+        slideIndex={this.state.slideIndex}
+        framePadding='5%'
         cellAlign='center'
         cellSpacing={20}
         autoGenerateStyleTag={true}
@@ -29,4 +33,4 @@ class Footer extends React.Component {
   }
 }
 
-export default Footer;
+export default Trending;

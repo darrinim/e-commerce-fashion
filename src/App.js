@@ -7,7 +7,8 @@ import CreatedDesigned from './components/CreatedDesigned/createdDesigned';
 import Reasons from './components/Reasons/reasons';
 import Fade from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
-import Footer from './components/Footer/footer';
+import Trending from './components/Trending/trending';
+import { Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       distance="25%"
       bottom
       delay={300}
-      duration={1000}>
+      duration={1000}
+    >
 
       <Header />
       <div className="homeCompContainer">
@@ -28,7 +30,7 @@ function App() {
       <CreatedDesigned />
       <Reasons />
       <Hero />
-      <Footer />
+      <Trending />
     </div>
   );
 }

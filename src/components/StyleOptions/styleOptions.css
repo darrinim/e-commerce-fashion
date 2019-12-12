@@ -35,6 +35,10 @@
   /* color: #f50c4c; */
   text-shadow: 1px 1px black;
 }
+.styleTitle:hover .styleOptions {
+  /* transform: scale(1.05);
+  filter: blur(2px) */
+}
 .styleOptionsContainer {
   width: 85%;
   margin: 5% auto 0 auto;
