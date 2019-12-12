@@ -9,28 +9,99 @@ import Fade from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
 import Trending from './components/Trending/trending';
 import { Router, Route, Switch } from 'react-router-dom';
+import LeftNav from './components/LeftNav/leftNav';
+import RightNav from './components/RightNav/rightNav';
+import Store from './components/Store/store';
+import './components/LeftNav/leftNav.css';
+import './components/RightNav/rightNav.css';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-    <Fade
-      distance="25%"
-      bottom
-      delay={300}
-      duration={1000}
-    >
+    <Switch>
 
-      <Header />
-      <div className="homeCompContainer">
-        <Home />
-      </div>
-      <StyleOptions />
+    <Route exact path="/" render={() => (
+      <>
+      <Fade
+        distance="25%"
+        bottom
+        delay={300}
+        duration={1000}
+      >
 
-    </Fade>
-      <CreatedDesigned />
-      <Reasons />
-      <Hero />
-      <Trending />
+        <Header />
+        <div className="homeCompContainer">
+          <Home />
+        </div>
+        <StyleOptions />
+
+      </Fade>
+        <CreatedDesigned />
+        <Reasons />
+        <Hero />
+        <Trending />
+        </>
+    )}/>
+
+    <Route exact path="/store" render={() => (
+      <>
+      <Fade
+        distance="25%"
+        bottom
+        delay={300}
+        duration={1000}
+      >
+        <Header />
+        <div className="storeContainer">
+          <LeftNav />
+          <Store />
+          <RightNav />
+        </div>
+
+      </Fade>
+      </>
+    )}/>
+
+    <Route exact path="/store/women" render={() => (
+      <>
+      <Fade
+        distance="25%"
+        bottom
+        delay={300}
+        duration={1000}
+      >
+        <Header />
+        <div className="storeContainer">
+          <LeftNav />
+          <Store />
+          <RightNav />
+        </div>
+
+      </Fade>
+      </>
+    )}/>
+
+    <Route exact path="/store/men" render={() => (
+      <>
+      <Fade
+        distance="25%"
+        bottom
+        delay={300}
+        duration={1000}
+      >
+        <Header />
+        <div className="storeContainer">
+          <LeftNav />
+          <Store />
+          <RightNav />
+        </div>
+
+      </Fade>
+      </>
+    )}/>
+
+    </Switch>
     </div>
   );
 }
