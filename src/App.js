@@ -15,8 +15,39 @@ import Store from './components/Store/store';
 import './components/LeftNav/leftNav.css';
 import './components/RightNav/rightNav.css';
 import './App.css';
+import { inventoryData } from './inventoryData';
 
-function App() {
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+      this.state = {
+        items: inventoryData,
+        cartCounter: null,
+        cartItems: [],
+      }
+  }
+
+  // addCart = () => {
+  //   console.log('HEY LOOK');
+  //   {/* BELOW IS FUNCTION TO UPDATE CART ITEMS NUMBER */}
+  //   let newCartTotal = this.state.cartCounter + 1
+  //
+  //   this.setState(prevState => ({
+  //     cartCounter: newCartTotal
+  //   }))
+  // }
+
+  deleteCart = () => {
+    console.log('DELETE YO');
+    let deleteCartTotal = this.state.cartCounter - 1
+    this.setState(prevState => ({
+      cartCounter: deleteCartTotal
+    }))
+  }
+
+
+  render() {
+    console.log('YOOOOOOO', this.state.items);
   return (
     <div className="App">
     <Switch>
@@ -52,10 +83,18 @@ function App() {
         delay={300}
         duration={1000}
       >
-        <Header />
+        <Header
+          cartCounter={this.state.cartCounter}
+          cartItems={this.state.cartItems}
+        />
         <div className="storeContainer">
           <LeftNav />
-          <Store />
+          <Store
+            items={this.state.items}
+            addCart={this.addCart}
+            cartCounter={this.state.cartCounter}
+            cartItems={this.state.cartItems}
+          />
           <RightNav />
         </div>
 
@@ -104,6 +143,7 @@ function App() {
     </Switch>
     </div>
   );
+}
 }
 
 export default App;

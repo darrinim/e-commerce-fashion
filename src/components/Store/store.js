@@ -13,7 +13,11 @@ class Store extends React.Component {
         <h2>All Styles</h2>
         <h3>Find your perfect look</h3>
 
-            <Inventory />
+            <Inventory
+              items={this.props.items}
+              cartItems={this.props.cartItems}
+              addCart={this.props.addCart}
+            />
 
       </div>
     )
