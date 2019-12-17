@@ -1,12 +1,19 @@
 import React from 'react';
 import './header.css';
 
-const Header = () => {
+const Header = (props) => {
 
   return(
 
     <div className="headerContainer">
       <h1 className="storeTitle"><span className="sonnen">Sonnen</span>brille</h1>
+      <li>
+        <button className="cart">
+        <i className="fas fa-shopping-cart">
+          <span>{props.cartCounter}</span>
+        </i>
+        </button>
+      </li>
     </div>
 
   )

@@ -1,4 +1,10 @@
 .homeCompContainer {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 100%;
+}
+.storeContainer {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
 }

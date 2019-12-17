@@ -1,0 +1,19 @@
+.itemImage {
+  width: 100%;
+}
+.inventoryContainer {
+  width: 80%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  /* height: 100%; */
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+}
+.itemWrapper {
+  width: 30%;
+  margin: 10px;
+}
+.itemName .itemPrice {
+  width: 100%;
+}

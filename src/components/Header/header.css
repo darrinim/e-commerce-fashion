@@ -34,12 +34,14 @@ body {
   font-size: 2.9rem;
   font-family: 'Cinzel', serif;
   font-weight: 400;
-  /* margin-bottom: 0; */
 }
 .sonnen {
   color: #f50c4c;
 }
-
+.cart {
+  background-color: transparent;
+  border: none;
+}
 /*
 font-family: 'Baskervville', serif;
 font-family: 'Cormorant Garamond', serif;
