@@ -20,8 +20,9 @@ class Inventory extends React.Component {
     this.setState({
       cartItems:[...this.state.cartItems, item],
       // selected:men
+    }, () => {
+      localStorage.setItem('cart', JSON.stringify(this.state.cartItems))
     })
-
   }
 
   render() {

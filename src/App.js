@@ -16,6 +16,7 @@ import './components/LeftNav/leftNav.css';
 import './components/RightNav/rightNav.css';
 import './App.css';
 import { inventoryData } from './inventoryData';
+import Cart from './components/Cart/cart';
 
 class App extends React.Component {
   constructor(props) {
@@ -37,13 +38,13 @@ class App extends React.Component {
   //   }))
   // }
 
-  deleteCart = () => {
-    console.log('DELETE YO');
-    let deleteCartTotal = this.state.cartCounter - 1
-    this.setState(prevState => ({
-      cartCounter: deleteCartTotal
-    }))
-  }
+  // deleteCart = () => {
+  //   console.log('DELETE YO');
+  //   let deleteCartTotal = this.state.cartCounter - 1
+  //   this.setState(prevState => ({
+  //     cartCounter: deleteCartTotal
+  //   }))
+  // }
 
 
   render() {
@@ -95,6 +96,7 @@ class App extends React.Component {
             cartCounter={this.state.cartCounter}
             cartItems={this.state.cartItems}
           />
+          <Cart />
           <RightNav />
         </div>
 
