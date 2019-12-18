@@ -78,8 +78,9 @@ class App extends React.Component {
             cartCounter={this.state.cartCounter}
             cartItems={this.state.cartItems}
           />
-          <Cart />
           <RightNav />
+          <Cart />
+
         </div>
 
       </Fade>

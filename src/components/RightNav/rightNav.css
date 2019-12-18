@@ -9,6 +9,7 @@
 }
 .rightNavContainer {
   width: 9%;
+  max-height: 550px;
 }
 .rightNavWrap {
   display: flex;
@@ -22,6 +23,14 @@
 }
 .rightNavIcon:last-child {
   margin-bottom: 0;
+}
+.cart {
+  background-color: transparent;
+  border: none;
+  font-size: 1.1em;
+}
+.cartImg {
+  list-style-type: none;
 }
 
 @media (max-width: 768px) {

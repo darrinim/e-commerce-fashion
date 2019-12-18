@@ -7,6 +7,7 @@
 }
 .leftNavContainer {
   width: 9%;
+  max-height: 550px;
   display: flex;
   flex-direction: column;
   justify-content: center;
