@@ -11,6 +11,7 @@ const Created = () => {
       <div className="createdImgWrapper">
         <img
           className="featureImageCr test"
+          alt='model glasses'
           src="https://res.cloudinary.com/darrin-im/image/upload/v1575958444/sunglasses-guy_gz0pq7.jpg"
         />
       </div>

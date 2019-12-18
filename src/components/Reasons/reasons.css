@@ -12,10 +12,10 @@
   /* background-color: red; */
 }
 .reasonTitle {
-  font-size: 30px;
+  font-size: calc(16px + (40 - 16) * ((100vw - 300px) / (1600 - 300)));
 }
 .reasonText {
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
-  font-size: 24px;
+  font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
 }

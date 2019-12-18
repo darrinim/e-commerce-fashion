@@ -17,6 +17,7 @@ const Designed = () => {
       <div className="designedImgWrapper">
         <img
           className="featureImage test"
+          alt='model glasses'
           src="https://res.cloudinary.com/darrin-im/image/upload/v1575958454/sunglasses-girl-matte.jpeg.crdownload_mclljt.jpg"
         />
       </div>

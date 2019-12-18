@@ -2,7 +2,7 @@ import React from 'react';
 import './styleOptions.css';
 import { optionData } from '../../e-commerce-data';
 import Fade from 'react-reveal/Fade';
-import { Router, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const StyleOptions = () => {
@@ -22,7 +22,9 @@ const StyleOptions = () => {
             <Link to={option.link}>
               <img
                 className="optionImage"
-                src={option.image} />
+                src={option.image}
+                alt={option.type}
+                />
               <p className="styleTitle">{option.type}</p>
             </Link>
 

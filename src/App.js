@@ -6,9 +6,8 @@ import Hero from './components/Hero/hero';
 import CreatedDesigned from './components/CreatedDesigned/createdDesigned';
 import Reasons from './components/Reasons/reasons';
 import Fade from 'react-reveal/Fade';
-import Flip from 'react-reveal/Flip';
 import Trending from './components/Trending/trending';
-import { Router, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import LeftNav from './components/LeftNav/leftNav';
 import RightNav from './components/RightNav/rightNav';
 import Store from './components/Store/store';
@@ -28,27 +27,10 @@ class App extends React.Component {
       }
   }
 
-  // addCart = () => {
-  //   console.log('HEY LOOK');
-  //   {/* BELOW IS FUNCTION TO UPDATE CART ITEMS NUMBER */}
-  //   let newCartTotal = this.state.cartCounter + 1
-  //
-  //   this.setState(prevState => ({
-  //     cartCounter: newCartTotal
-  //   }))
-  // }
-
-  // deleteCart = () => {
-  //   console.log('DELETE YO');
-  //   let deleteCartTotal = this.state.cartCounter - 1
-  //   this.setState(prevState => ({
-  //     cartCounter: deleteCartTotal
-  //   }))
-  // }
 
 
   render() {
-    console.log('YOOOOOOO', this.state.items);
+    // console.log('YOOOOOOO', this.state.items);
   return (
     <div className="App">
     <Switch>
@@ -96,8 +78,9 @@ class App extends React.Component {
             cartCounter={this.state.cartCounter}
             cartItems={this.state.cartItems}
           />
-          <Cart />
           <RightNav />
+          <Cart />
+
         </div>
 
       </Fade>

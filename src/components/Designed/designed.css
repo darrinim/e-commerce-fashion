@@ -13,3 +13,15 @@
 .designedImgWrapper {
   grid-area: designedImg;
 }
+
+@media (max-width: 768px) {
+  .designedContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .designedTextWrapper {
+    padding: 0;
+  }
+}

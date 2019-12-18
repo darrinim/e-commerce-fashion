@@ -48,7 +48,8 @@
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 4.3em;
+  /* font-size: 4.3em; */
+  font-size: calc(20px + (80 - 20) * ((100vw - 300px) / (1600 - 300)));
   color: white;
-    text-shadow: 1px 1px black;
+  text-shadow: 1px 1px black;
 }
