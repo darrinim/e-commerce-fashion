@@ -18,7 +18,7 @@
 }
 .trendingTitle {
   text-align: center;
-  font-size: 3em;
+  font-size: calc(20px + (80 - 20) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 400;
   margin-bottom: 0;
 }

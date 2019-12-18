@@ -7,7 +7,9 @@ const Hero = () => {
     <div className="heroContainer">
       <img
         className="heroImage"
-        src="https://res.cloudinary.com/darrin-im/image/upload/v1576002738/hero-sunglasses_xyrbpu.jpg" />
+        src="https://res.cloudinary.com/darrin-im/image/upload/v1576002738/hero-sunglasses_xyrbpu.jpg"
+        alt='hero'
+        />
       <p className="heroTitle">Signature Looks</p>
     </div>
   )

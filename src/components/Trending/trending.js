@@ -12,8 +12,7 @@ class Trending extends React.Component {
     <div className="trendingContainer">
       <h2 className="trendingTitle">Trending</h2>
       <Carousel
-      frameOverflow
-
+        frameOverflow
         slideIndex={this.state.slideIndex}
         framePadding='5%'
         cellAlign='center'
@@ -23,10 +22,10 @@ class Trending extends React.Component {
         autoplay= { true }
         wrapAround= { true }
       >
-        <img className="homeImage" src='https://res.cloudinary.com/darrin-im/image/upload/v1576090511/feature-sunglasses_vrwumq.jpg' />
-        <img className="homeImage" src="https://res.cloudinary.com/darrin-im/image/upload/v1576090511/feature-sunglasses_vrwumq.jpg" />
-        <img className="homeImage" src='https://res.cloudinary.com/darrin-im/image/upload/v1576090511/feature-sunglasses_vrwumq.jpg' />
-        <img className="homeImage" src="https://res.cloudinary.com/darrin-im/image/upload/v1576090511/feature-sunglasses_vrwumq.jpg" />
+        <img className="homeImage" src='https://res.cloudinary.com/darrin-im/image/upload/v1576090511/feature-sunglasses_vrwumq.jpg' alt='glasses' />
+        <img className="homeImage" src="https://res.cloudinary.com/darrin-im/image/upload/v1576090511/feature-sunglasses_vrwumq.jpg" alt='glasses' />
+        <img className="homeImage" src='https://res.cloudinary.com/darrin-im/image/upload/v1576090511/feature-sunglasses_vrwumq.jpg' alt='glasses' />
+        <img className="homeImage" src="https://res.cloudinary.com/darrin-im/image/upload/v1576090511/feature-sunglasses_vrwumq.jpg" alt='glasses' />
       </Carousel>
     </div>
   )

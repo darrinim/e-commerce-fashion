@@ -17,7 +17,22 @@
   align-items: center;
 }
 .rightNavIcon {
-  writing-mode: vertical-rl;
-  /* margin-bottom: 30px; */
-  font-size: 1.3rem;
+  margin-bottom: 4.5rem;
+  font-size: 1.2rem;
+}
+.rightNavIcon:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .rightNavIcon {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .rightNavIcon {
+    font-size: 0.7rem;
+    margin-bottom: 0.7rem;
+  }
 }

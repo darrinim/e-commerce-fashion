@@ -1,8 +1,13 @@
 .itemImage {
-  width: 100%;
+  width: 80%;
+  border: solid #fff;
+  border-width:10px 10px 4rem 10px;
+  box-shadow:1px 1px 5px #333;
+  /* filter: sepia(60%); */
+  /* filter: grayscale(0%); */
 }
 .inventoryContainer {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   flex-wrap: wrap;
   /* height: 100%; */
@@ -12,8 +17,39 @@
 }
 .itemWrapper {
   width: 30%;
-  margin: 10px;
+  margin: 15px;
+}
+.itemImage:hover {
+  outline: 1px solid;
+  transform: rotate(3deg);
+  outline-width: thin;
+  outline-color: rgba(0,0,0,0.45);
+  /* outline-offset: 5px; */
+  filter: grayscale(100%);
+  transition: filter 0.5s, transform 0.3s;
+  cursor: pointer;
 }
 .itemName .itemPrice {
   width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .itemImage {
+    border-width: 10px 10px 3em 10px;
+  }
+}
+@media (max-width: 768px) {
+  .itemImage {
+    border-width: 10px 10px 2.5em 10px;
+  }
+}
+@media (max-width: 525px) {
+  .itemImage {
+    border-width: 5px 5px 1.5em 5px;
+  }
+}
+@media (max-width: 375px) {
+  .itemImage {
+      border-width: 5px 5px 1.1em 5px;
+  }
 }

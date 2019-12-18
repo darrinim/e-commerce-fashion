@@ -3,6 +3,7 @@
    width: 100%;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: auto;
+   /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
    grid-template-areas:
      "createdImg createdText";
  }
@@ -16,9 +17,25 @@
  .creDesTextTitle {
    /* color: #f50c4c; */
    font-size: 2em;
+  font-size: calc(18px + (40 - 18) * ((100vw - 300px) / (1600 - 300)));
    text-transform: uppercase;
    text-shadow: 1px 1px white;
  }
  .creDesText {
-   font-size: 22px;
+  font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
+ }
+
+ @media (max-width: 768px) {
+   .createdContainer {
+     display: flex;
+     flex-direction: column;
+     width: 80%;
+     margin: 0 auto;
+   }
+   .createdImgWrapper {
+      margin: 0 auto;
+   }
+   .createdTextWrapper {
+    padding: 0;
+   }
  }

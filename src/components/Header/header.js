@@ -7,7 +7,7 @@ const Header = (props) => {
 
     <div className="headerContainer">
       <h1 className="storeTitle"><span className="sonnen">Sonnen</span>brille</h1>
-      <li>
+      <li className="cartImg">
         <button className="cart">
         <i className="fas fa-shopping-cart">
           <span>{props.cartCounter}</span>

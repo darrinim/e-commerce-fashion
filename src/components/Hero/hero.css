@@ -14,7 +14,7 @@
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 4em;
+  font-size: calc(20px + (80 - 20) * ((100vw - 300px) / (1600 - 300)));
   color: black;
   text-shadow: 2px 2px rgba(255,255,255,0.8);
 }

@@ -31,7 +31,8 @@ body {
   margin-bottom: 0;
 }
 .storeTitle {
-  font-size: 2.9rem;
+  /* font-size: 2.9rem; */
+  font-size: calc(1.5rem + (40 - 1.5) * ((100vw - 300px) / (1600 - 300)));
   font-family: 'Cinzel', serif;
   font-weight: 400;
 }
@@ -42,6 +43,9 @@ body {
   background-color: transparent;
   border: none;
 }
+.cartImg {
+  list-style-type: none;
+}
 /*
 font-family: 'Baskervville', serif;
 font-family: 'Cormorant Garamond', serif;
@@ -50,3 +54,9 @@ font-family: 'Josefin Slab', serif;
 font-family: 'Prata', serif;
 font-family: 'Spectral', serif;
 font-family: 'Noto Serif KR', serif; */
+
+@media (min-width: 375px) {
+  .storeTitle {
+    /* font-size: 2rem; */
+  }
+}
