@@ -1,15 +1,22 @@
 import React from 'react';
 import './rightNav.css';
+import { CartContext } from '../../contexts/CartContext';
 
-const RightNav = () => {
+class RightNav extends React.Component {
+
+  static contextType = CartContext;
+  render() {
+    // console.log(this.context);
+    // object destructuring used to get those properties (cartItems, cartCounter, etc.) from this.context, and storing them in the same variable names to make it easier
+
+    const { getCart, handleAddToCart, addCart, cartItems, cartCounter, items } = this.context;
 
   return(
     <div className="rightNavContainer">
       <ul className="rightNavWrap sideNav">
         <li className="rightNavIcon cartImg">
-          <button className="cart">
+          <button onClick={getCart} className="cart">
           <i className="fas fa-shopping-cart">
-            <span></span>
           </i>
           </button>
         </li>
@@ -25,6 +32,7 @@ const RightNav = () => {
       </ul>
     </div>
   )
+}
 }
 
 

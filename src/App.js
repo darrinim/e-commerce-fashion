@@ -16,6 +16,8 @@ import './components/RightNav/rightNav.css';
 import './App.css';
 import { inventoryData } from './inventoryData';
 import Cart from './components/Cart/cart';
+import CartContextProvider from './contexts/CartContext';
+import { CartContext } from './contexts/CartContext';
 
 class App extends React.Component {
   constructor(props) {
@@ -28,11 +30,13 @@ class App extends React.Component {
   }
 
 
-
   render() {
-    // console.log('YOOOOOOO', this.state.items);
+    
   return (
     <div className="App">
+
+    <CartContextProvider>
+
     <Switch>
 
     <Route exact path="/" render={() => (
@@ -126,6 +130,9 @@ class App extends React.Component {
     )}/>
 
     </Switch>
+
+
+    </CartContextProvider>
     </div>
   );
 }
