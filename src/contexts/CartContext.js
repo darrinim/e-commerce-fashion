@@ -11,25 +11,31 @@ class CartContextProvider extends Component {
     cartItems: [],
   }
 
+  componentDidMount() {
+    this.getCart();
+  }
+
   addCart = (item) => {
     this.setState({
       cartItems:[...this.state.cartItems, item],
     }, () => {
       localStorage.setItem('cart', JSON.stringify(this.state.cartItems))
     })
-    console.log('PLEASE WORK', this.state.cartItems);
+    console.log('PLEASE WORK ADDCART', this.state.cartItems);
   }
 
   getCart = () => {
     let getCart = JSON.parse(localStorage.getItem('cart') || "[]")
-    let items = getCart.map( itemId => {
-      return inventoryData.find( item => item.id === itemId)
-    })
+    console.log('this is getCart', getCart);
+    // let items = getCart.map( itemId => {
+    //   console.log('itemID', itemId);
+    //   return inventoryData.find( item => item.id === itemId)
+    // })
     this.setState({
-      cartItems: items
+      cartItems: getCart
     });
-      console.log('PLEASE WORK', this.state.cartItems);
-}
+      console.log('PLEASE WORK GETCART', this.state.cartItems);
+  }
 
 
   // handleAddToCart = () => {

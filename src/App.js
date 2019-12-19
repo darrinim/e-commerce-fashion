@@ -31,7 +31,7 @@ class App extends React.Component {
 
 
   render() {
-    
+
   return (
     <div className="App">
 
@@ -126,6 +126,18 @@ class App extends React.Component {
         </div>
 
       </Fade>
+      </>
+    )}/>
+
+    <Route exact path="/cart" render={() => (
+      <>
+        <Header />
+        <div className="storeContainer">
+          <LeftNav />
+          <Cart />
+          <RightNav />
+        </div>
+
       </>
     )}/>
 

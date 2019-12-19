@@ -43,7 +43,7 @@ class Inventory extends React.Component {
           <p className="itemName">{item.name}</p>
           <p className="itemPrice">${item.price}</p>
           <button
-            onClick={() => addCart()}>Add to Cart</button>
+            onClick={() => addCart(item)}>Add to Cart</button>
           </div>
         </div>
         )

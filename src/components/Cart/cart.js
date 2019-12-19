@@ -22,15 +22,23 @@ class Cart extends React.Component {
     // this.setState({
     //   cartItems: items
     // });
+    // {getCart}
   }
 
   static contextType = CartContext;
 
   render() {
-    const { handleAddToCart, addCart, cartItems, cartCounter, items } = this.context;
-
+    const { getCart, handleAddToCart, addCart, cartItems, cartCounter, items } = this.context;
+    console.log('this is what were looking for', cartItems);
     return(
       <div>
+        {cartItems.map( item => {
+          return(
+            <div>
+              {item.name}
+            </div>
+          )
+        })}
       </div>
     )
   }

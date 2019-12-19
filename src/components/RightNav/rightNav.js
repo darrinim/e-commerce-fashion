@@ -1,6 +1,7 @@
 import React from 'react';
 import './rightNav.css';
 import { CartContext } from '../../contexts/CartContext';
+import { Link } from 'react-router-dom';
 
 class RightNav extends React.Component {
 
@@ -15,10 +16,11 @@ class RightNav extends React.Component {
     <div className="rightNavContainer">
       <ul className="rightNavWrap sideNav">
         <li className="rightNavIcon cartImg">
-          <button onClick={getCart} className="cart">
+          <Link to='/cart' className="cart">
           <i className="fas fa-shopping-cart">
           </i>
-          </button>
+          <span>{cartItems.length}</span>
+          </Link>
         </li>
         <li className="rightNavIcon">
           <i class="fab fa-facebook"></i>
