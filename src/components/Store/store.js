@@ -12,8 +12,8 @@ class Store extends React.Component {
     console.log('this is in the store component');
     return(
       <div className="storeOuterContainer">
-        <h2>All Styles</h2>
-        <h3>Find your perfect look</h3>
+        <h2 className="allStylesTitle">All Styles</h2>
+        <h3 className="allStyleText">Find your perfect look</h3>
           <Inventory />
       </div>
     )

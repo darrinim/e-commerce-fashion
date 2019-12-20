@@ -37,13 +37,16 @@ class Inventory extends React.Component {
       { inventoryData.map( item => {
         return(
         <div className="itemWrapper">
-          <img className="itemImage" src={item.img} alt={item.name} />
+          <div className="pureTest">
+            <img className="itemImage" src={item.img} alt={item.name} />
+          </div>
           <div className="itemContain">
             <p className="itemName">{item.name}</p>
             <p className="itemPrice">${item.price}</p>
             <button
               className="addCartButton"
-              onClick={() => addCart(item)}>            <i className="fas fa-shopping-cart"></i> &nbsp;Add to Cart</button>
+              onClick={() => addCart(item)}>
+              <i className="fas fa-shopping-cart"></i> &nbsp;Add to Cart</button>
           </div>
         </div>
         )
