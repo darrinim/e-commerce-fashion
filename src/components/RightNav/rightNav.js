@@ -10,16 +10,15 @@ class RightNav extends React.Component {
     // console.log(this.context);
     // object destructuring used to get those properties (cartItems, cartCounter, etc.) from this.context, and storing them in the same variable names to make it easier
 
-    const { getCart, handleAddToCart, addCart, cartItems, cartCounter, items } = this.context;
+    const { removeCart, getCart, handleAddToCart, addCart, cartItems, cartCounter, items } = this.context;
 
   return(
     <div className="rightNavContainer">
       <ul className="rightNavWrap sideNav">
         <li className="rightNavIcon cartImg">
           <Link to='/cart' className="cart">
-          <i className="fas fa-shopping-cart">
-          </i>
-          <span>{cartItems.length}</span>
+            <i className="fas fa-shopping-cart"></i>
+            <span>&nbsp;{cartItems.length}</span>
           </Link>
         </li>
         <li className="rightNavIcon">

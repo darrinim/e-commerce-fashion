@@ -11,43 +11,50 @@ class CartContextProvider extends Component {
     cartItems: [],
   }
 
-  componentDidMount() {
-    this.getCart();
-  }
-
   addCart = (item) => {
     this.setState({
       cartItems:[...this.state.cartItems, item],
     }, () => {
       localStorage.setItem('cart', JSON.stringify(this.state.cartItems))
     })
-    console.log('PLEASE WORK ADDCART', this.state.cartItems);
+    // console.log('PLEASE WORK ADDCART', this.state.cartItems);
+  }
+
+  removeCart = (id) => {
+    // pass in id of item that we select
+    let getCart = JSON.parse(localStorage.getItem('cart') || "[]")
+    // get items from cart in local storage
+    let cart = getCart.filter( items => {
+      console.log('cart items.id =', items.id);
+      return items.id !== id
+    }) // filters through cart and returns items where id doesn't match the selected
+    console.log('this is cart', cart);
+    // set state to cart (above), sets those items in local storage again
+    this.setState({
+      cartItems: cart
+    }, () => {
+        localStorage.setItem('cart', JSON.stringify(this.state.cartItems))
+    })
   }
 
   getCart = () => {
+    // gets all items in cart in local storage
     let getCart = JSON.parse(localStorage.getItem('cart') || "[]")
-    console.log('this is getCart', getCart);
-    // let items = getCart.map( itemId => {
-    //   console.log('itemID', itemId);
-    //   return inventoryData.find( item => item.id === itemId)
-    // })
+    console.log('this is getCart initial', getCart);
     this.setState({
       cartItems: getCart
     });
-      console.log('PLEASE WORK GETCART', this.state.cartItems);
   }
 
-
-  // handleAddToCart = () => {
-  //   let newCartTotal = this.state.cartCounter + 1
-  //   this.setState((prevState, props) => ({
-  //     cartCounter: newCartTotal,
-  //   }))
-  // }
+  componentDidMount() {
+    this.getCart();
+  }
 
   render() {
+    console.log('this is cartItems state', this.state.cartItems);
     return (
-      <CartContext.Provider value={{...this.state, addCart: this.addCart, handleAddToCart: this.handleAddToCart, getCart: this.getCart}}>
+      // context provider allows us to send state/functions to it's children
+      <CartContext.Provider value={{...this.state, addCart: this.addCart, handleAddToCart: this.handleAddToCart, getCart: this.getCart, removeCart: this.removeCart}}>
         {this.props.children}
       </CartContext.Provider>
     )

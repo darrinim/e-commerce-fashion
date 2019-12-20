@@ -22,10 +22,22 @@ class Trending extends React.Component {
         autoplay= { true }
         wrapAround= { true }
       >
-        <img className="homeImage" src='https://res.cloudinary.com/darrin-im/image/upload/v1576090511/feature-sunglasses_vrwumq.jpg' alt='glasses' />
-        <img className="homeImage" src="https://res.cloudinary.com/darrin-im/image/upload/v1576090511/feature-sunglasses_vrwumq.jpg" alt='glasses' />
-        <img className="homeImage" src='https://res.cloudinary.com/darrin-im/image/upload/v1576090511/feature-sunglasses_vrwumq.jpg' alt='glasses' />
-        <img className="homeImage" src="https://res.cloudinary.com/darrin-im/image/upload/v1576090511/feature-sunglasses_vrwumq.jpg" alt='glasses' />
+        <div>
+          <img className="homeImage" src='https://res.cloudinary.com/darrin-im/image/upload/v1576090511/feature-sunglasses_vrwumq.jpg' alt='glasses' />
+          <p>yoooo</p>
+        </div>
+        <div>
+          <img className="homeImage" src="https://res.cloudinary.com/darrin-im/image/upload/v1576090511/feature-sunglasses_vrwumq.jpg" alt='glasses' />
+          <p>yoooo</p>
+        </div>
+        <div>
+          <img className="homeImage" src='https://res.cloudinary.com/darrin-im/image/upload/v1576090511/feature-sunglasses_vrwumq.jpg' alt='glasses' />
+          <p>yoooo</p>
+        </div>
+        <div>
+          <img className="homeImage" src="https://res.cloudinary.com/darrin-im/image/upload/v1576090511/feature-sunglasses_vrwumq.jpg" alt='glasses' />
+          <p>yoooo</p>
+        </div>
       </Carousel>
     </div>
   )

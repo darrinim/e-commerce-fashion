@@ -14,13 +14,7 @@ class Store extends React.Component {
       <div className="storeOuterContainer">
         <h2>All Styles</h2>
         <h3>Find your perfect look</h3>
-
-            <Inventory
-              items={this.props.items}
-              cartItems={this.props.cartItems}
-              addCart={this.props.addCart}
-            />
-
+          <Inventory />
       </div>
     )
   }

@@ -2,6 +2,7 @@ import React from 'react';
 import './cart.css';
 import { inventoryData } from '../../inventoryData.js';
 import { CartContext } from '../../contexts/CartContext';
+import Test from '../test'
 
 class Cart extends React.Component {
 
@@ -22,20 +23,23 @@ class Cart extends React.Component {
     // this.setState({
     //   cartItems: items
     // });
-    // {getCart}
+
   }
 
   static contextType = CartContext;
 
   render() {
-    const { getCart, handleAddToCart, addCart, cartItems, cartCounter, items } = this.context;
-    console.log('this is what were looking for', cartItems);
+    const { getCart, handleAddToCart, addCart, cartItems, cartCounter, items, removeCart } = this.context;
+    // console.log('this is what were looking for', cartItems);
     return(
-      <div>
+      <div className="cartContainer">
         {cartItems.map( item => {
           return(
-            <div>
-              {item.name}
+            <div className="cartWrapper">
+              <img className="itemImage cartImage" src={item.img} />
+              <p>{item.name}</p>
+              <p>{item.price}</p>
+              <button onClick={() => removeCart(item.id)}>remove</button>
             </div>
           )
         })}

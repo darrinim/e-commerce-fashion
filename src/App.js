@@ -11,23 +11,12 @@ import { Route, Switch } from 'react-router-dom';
 import LeftNav from './components/LeftNav/leftNav';
 import RightNav from './components/RightNav/rightNav';
 import Store from './components/Store/store';
-import './components/LeftNav/leftNav.css';
-import './components/RightNav/rightNav.css';
 import './App.css';
 import { inventoryData } from './inventoryData';
 import Cart from './components/Cart/cart';
 import CartContextProvider from './contexts/CartContext';
-import { CartContext } from './contexts/CartContext';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props)
-      this.state = {
-        items: inventoryData,
-        cartCounter: null,
-        cartItems: [],
-      }
-  }
 
 
   render() {
@@ -71,20 +60,11 @@ class App extends React.Component {
         duration={1000}
       >
         <Header
-          cartCounter={this.state.cartCounter}
-          cartItems={this.state.cartItems}
         />
         <div className="storeContainer">
           <LeftNav />
-          <Store
-            items={this.state.items}
-            addCart={this.addCart}
-            cartCounter={this.state.cartCounter}
-            cartItems={this.state.cartItems}
-          />
+          <Store />
           <RightNav />
-          <Cart />
-
         </div>
 
       </Fade>

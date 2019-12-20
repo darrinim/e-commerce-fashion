@@ -27,7 +27,7 @@
 .styleOptions {
   padding: 8px;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .styleOptions:hover .styleTitle {
   transition: color 0.5s;

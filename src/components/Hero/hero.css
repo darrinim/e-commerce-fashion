@@ -11,7 +11,7 @@
 
 .heroTitle {
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: calc(20px + (80 - 20) * ((100vw - 300px) / (1600 - 300)));
