@@ -1,21 +1,20 @@
 export const inventoryData = [
   {
     "id":1,
-    "img":"https://res.cloudinary.com/darrin-im/image/upload/v1575957862/sunglasses-yellow_kjkxop.jpg",
+    "img":"https://res.cloudinary.com/darrin-im/image/upload/v1576090511/feature-sunglasses_vrwumq.jpg",
     "name":"sapien",
     "price":10,
     "type": "mens"
   },
   {
     "id":2,
-    "img":"https://res.cloudinary.com/darrin-im/image/upload/v1575957862/sunglasses-yellow_kjkxop.jpg",
-    "name":"ultrices phasellus",
+    "img":"https://res.cloudinary.com/darrin-im/image/upload/v1576090511/feature-sunglasses_vrwumq.jpg",
     "price":1,
     "type": "mens"
   },
   {
     "id":3,
-    "img":"https://res.cloudinary.com/darrin-im/image/upload/v1575957862/sunglasses-yellow_kjkxop.jpg",
+    "img":"https://res.cloudinary.com/darrin-im/image/upload/v1576090511/feature-sunglasses_vrwumq.jpg",
     "name":"pellentesque volutpat",
     "price":10,
     "type": "mens"

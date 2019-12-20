@@ -18,6 +18,7 @@
 .itemWrapper {
   width: 30%;
   margin: 15px;
+  position: relative;
 }
 .itemImage:hover {
   outline: 1px solid;
@@ -31,6 +32,23 @@
 }
 .itemName .itemPrice {
   width: 100%;
+}
+.addCartButton {
+  background-color: black;
+  padding: 2px 0;
+  color: #FFFFFF;
+  width: 79%;
+  outline: none;
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  background-color: rgba(0,0,0,0.6);
+}
+div.itemWrapper:hover .addCartButton{
+  visibility: visible;
 }
 
 @media (max-width: 1024px) {

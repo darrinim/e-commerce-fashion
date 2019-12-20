@@ -38,11 +38,12 @@ class Inventory extends React.Component {
         return(
         <div className="itemWrapper">
           <img className="itemImage" src={item.img} alt={item.name} />
-          <div>
-          <p className="itemName">{item.name}</p>
-          <p className="itemPrice">${item.price}</p>
-          <button
-            onClick={() => addCart(item)}>Add to Cart</button>
+          <div className="itemContain">
+            <p className="itemName">{item.name}</p>
+            <p className="itemPrice">${item.price}</p>
+            <button
+              className="addCartButton"
+              onClick={() => addCart(item)}>            <i className="fas fa-shopping-cart"></i> &nbsp;Add to Cart</button>
           </div>
         </div>
         )

@@ -41,17 +41,27 @@
 }
 .cartNumber {
   position: absolute;
-  right: -6px;
-  top: -15px;
+  right: 25%;
+  bottom: 50%;
+}
+.newCart {
+  width: 25%;
+  margin: 0 42% 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .cartNumber {
+    /* top: -20px; */
+  }
 }
 
 @media (max-width: 768px) {
   .cartNumber {
-    top: -10px;
+    /* top: -20px; */
   }
 }
 @media (max-width: 425px) {
   .cartNumber {
-    top: -8px;
+    /* top: -10px; */
   }
 }
