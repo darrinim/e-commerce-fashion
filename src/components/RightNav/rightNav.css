@@ -32,7 +32,26 @@
   border: none;
   font-size: 1.1em;
   display: flex;
+  text-decoration: none;
+  color: black;
 }
 .cartImg {
   list-style-type: none;
+  position: relative;
+}
+.cartNumber {
+  position: absolute;
+  right: -6px;
+  top: -15px;
+}
+
+@media (max-width: 768px) {
+  .cartNumber {
+    top: -10px;
+  }
+}
+@media (max-width: 425px) {
+  .cartNumber {
+    top: -8px;
+  }
 }

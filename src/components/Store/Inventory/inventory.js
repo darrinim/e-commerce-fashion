@@ -26,7 +26,6 @@ class Inventory extends React.Component {
 
 
 
-
   static contextType = CartContext;
 
   render() {

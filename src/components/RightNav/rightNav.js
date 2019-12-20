@@ -18,7 +18,7 @@ class RightNav extends React.Component {
         <li className="rightNavIcon cartImg">
           <Link to='/cart' className="cart">
             <i className="fas fa-shopping-cart"></i>
-            <span>&nbsp;{cartItems.length}</span>
+            <span className="cartNumber">&nbsp;{cartItems.length === 0 ? null : cartItems.length}</span>
           </Link>
         </li>
         <li className="rightNavIcon">

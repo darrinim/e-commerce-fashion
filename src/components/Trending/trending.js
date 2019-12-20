@@ -22,21 +22,25 @@ class Trending extends React.Component {
         autoplay= { true }
         wrapAround= { true }
       >
-        <div>
+        <div className="trendingImage">
           <img className="homeImage" src='https://res.cloudinary.com/darrin-im/image/upload/v1576090511/feature-sunglasses_vrwumq.jpg' alt='glasses' />
-          <p>yoooo</p>
+          <p>Aviators</p>
+          <p>$40</p>
         </div>
-        <div>
+        <div className="trendingImage">
           <img className="homeImage" src="https://res.cloudinary.com/darrin-im/image/upload/v1576090511/feature-sunglasses_vrwumq.jpg" alt='glasses' />
-          <p>yoooo</p>
+          <p>Spectacle</p>
+          <p>$30</p>
         </div>
-        <div>
+        <div className="trendingImage">
           <img className="homeImage" src='https://res.cloudinary.com/darrin-im/image/upload/v1576090511/feature-sunglasses_vrwumq.jpg' alt='glasses' />
-          <p>yoooo</p>
+          <p>Cat eye</p>
+          <p>$50</p>
         </div>
-        <div>
+        <div className="trendingImage">
           <img className="homeImage" src="https://res.cloudinary.com/darrin-im/image/upload/v1576090511/feature-sunglasses_vrwumq.jpg" alt='glasses' />
-          <p>yoooo</p>
+          <p>Ray Bans</p>
+          <p>$90</p>
         </div>
       </Carousel>
     </div>

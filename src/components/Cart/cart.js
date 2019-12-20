@@ -2,7 +2,6 @@ import React from 'react';
 import './cart.css';
 import { inventoryData } from '../../inventoryData.js';
 import { CartContext } from '../../contexts/CartContext';
-import Test from '../test'
 
 class Cart extends React.Component {
 

@@ -15,6 +15,7 @@ import './App.css';
 import { inventoryData } from './inventoryData';
 import Cart from './components/Cart/cart';
 import CartContextProvider from './contexts/CartContext';
+import Footer from './components/Footer/footer';
 
 class App extends React.Component {
 
@@ -48,6 +49,7 @@ class App extends React.Component {
         <Reasons />
         <Hero />
         <Trending />
+        <Footer />
         </>
     )}/>
 
@@ -117,7 +119,6 @@ class App extends React.Component {
           <Cart />
           <RightNav />
         </div>
-
       </>
     )}/>
 
