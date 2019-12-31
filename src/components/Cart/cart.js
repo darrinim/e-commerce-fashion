@@ -37,8 +37,8 @@ class Cart extends React.Component {
             <div className="cartWrapper">
               <img className="itemImage cartImage" src={item.img} />
               <p>{item.name}</p>
-              <p>{item.price}</p>
-              <button onClick={() => removeCart(item.id)}>remove</button>
+              <p>${item.price}</p>
+              <button className="removeButton" onClick={() => removeCart(item.id)}>Remove from Cart</button>
             </div>
           )
         })}

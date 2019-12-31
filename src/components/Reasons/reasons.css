@@ -13,6 +13,7 @@
 }
 .reasonTitle {
   font-size: calc(16px + (40 - 16) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: 400;
 }
 .reasonText {
   width: 80%;

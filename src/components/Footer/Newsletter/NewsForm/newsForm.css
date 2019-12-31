@@ -1,0 +1,19 @@
+.newsFormContainer {
+
+}
+.emailInput {
+  width: 25%;
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  height: 3em;
+}
+.emailInput::placeholder {
+  color: white;
+  padding-left: 5px;
+}
+.emailSubmit {
+  width: 25%;
+  border: none;
+  height: 3em;
+}

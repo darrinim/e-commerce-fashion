@@ -39,6 +39,10 @@ body {
 .sonnen {
   color: #f50c4c;
 }
+.title {
+  text-decoration: none;
+  color: black;
+}
 /*
 font-family: 'Baskervville', serif;
 font-family: 'Cormorant Garamond', serif;

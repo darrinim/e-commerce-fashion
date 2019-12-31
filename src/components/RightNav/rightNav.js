@@ -23,13 +23,19 @@ class RightNav extends React.Component {
           </Link>
         </li>
         <li className="rightNavIcon">
-          <i class="fab fa-facebook"></i>
+          <a className="icon" target= "blank" href="http://www.google.com">
+            <i class="fab fa-facebook"></i>
+          </a>
         </li>
         <li className="rightNavIcon">
-          <i class="fab fa-instagram"></i>
+          <a className="icon" target= "blank" href="http://www.google.com">
+            <i class="fab fa-instagram"></i>
+          </a>
         </li>
         <li className="rightNavIcon">
-          <i class="fab fa-twitter"></i>
+          <a className="icon" target= "blank" href="http://www.google.com">
+            <i class="fab fa-twitter"></i>
+          </a>
         </li>
       </ul>
     </div>

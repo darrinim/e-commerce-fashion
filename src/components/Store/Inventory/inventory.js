@@ -43,10 +43,10 @@ class Inventory extends React.Component {
           <div className="itemContain">
             <p className="itemName">{item.name}</p>
             <p className="itemPrice">${item.price}</p>
-            <button
-              className="addCartButton"
-              onClick={() => addCart(item)}>
-              <i className="fas fa-shopping-cart"></i> &nbsp;Add to Cart</button>
+              <button
+                className="addCartButtonConst"
+                onClick={() => addCart(item)}>
+                <i className="fas fa-shopping-cart"></i> &nbsp;Add to Cart</button>
           </div>
         </div>
         )

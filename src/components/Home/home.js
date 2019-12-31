@@ -12,7 +12,7 @@ const Home = () => {
       <div className="homeImageWrap">
         <img
           alt='home'
-          src="https://res.cloudinary.com/darrin-im/image/upload/v1575518925/fashion-landing_bnxm5x.jpg"
+          src="https://res.cloudinary.com/darrin-im/image/upload/v1577046136/landing-hero_copy_y5jzpg.jpg"
           className="homeImage"
           />
       </div>

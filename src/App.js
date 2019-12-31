@@ -68,7 +68,7 @@ class App extends React.Component {
           <Store />
           <RightNav />
         </div>
-
+        <Footer />
       </Fade>
       </>
     )}/>
@@ -87,7 +87,7 @@ class App extends React.Component {
           <Store />
           <RightNav />
         </div>
-
+        <Footer />
       </Fade>
       </>
     )}/>
@@ -106,7 +106,7 @@ class App extends React.Component {
           <Store />
           <RightNav />
         </div>
-
+        <Footer />
       </Fade>
       </>
     )}/>
@@ -119,6 +119,7 @@ class App extends React.Component {
           <Cart />
           <RightNav />
         </div>
+        <Footer />
       </>
     )}/>
 

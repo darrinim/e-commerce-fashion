@@ -15,9 +15,13 @@
     text-align: center;
     /* border: 1px solid black; */
     /* border: 1px solid rgba(0,0,0,0.25); */
-    background-color: #f2f2f2;
-    outline: solid white thick;
+    /* background-color: #f2f2f2; */
+    /* outline: solid white thick; */
 }
 .allStylesTitle, .allStyleText {
   font-weight: 300;
+  font-size: calc(10px + (35 - 10) * ((100vw - 300px) / (1600 - 300)));
+}
+.storeHero {
+  width: 100%;
 }
