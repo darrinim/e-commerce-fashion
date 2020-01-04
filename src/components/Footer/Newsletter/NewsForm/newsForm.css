@@ -17,3 +17,11 @@
   border: none;
   height: 3em;
 }
+@media(max-width: 768px) {
+  .emailInput {
+    width: 48%;
+  }
+  .emailSubmit {
+    width: 48%;
+  }
+}

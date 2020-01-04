@@ -12,6 +12,7 @@
     margin-top: 10%;
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
   }
   .contactLinksWrap {
     margin: 0;
@@ -22,7 +23,6 @@
     margin-right: 0;
   }
   .contactContainer {
-    justify-content: center;
     text-align: center;
   }
 }

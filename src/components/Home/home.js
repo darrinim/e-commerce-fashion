@@ -10,10 +10,15 @@ const Home = () => {
     <div className="homeContainer">
       <LeftNav />
       <div className="homeImageWrap">
-        <img
+{/*        <img
           alt='home'
           src="https://res.cloudinary.com/darrin-im/image/upload/v1577046136/landing-hero_copy_y5jzpg.jpg"
           className="homeImage"
+          /> */}
+          <img
+            alt='home'
+            src="https://res.cloudinary.com/darrin-im/image/upload/v1575911012/fashion-landing_gr2lql.jpg"
+            className="homeImage"
           />
       </div>
       <RightNav />

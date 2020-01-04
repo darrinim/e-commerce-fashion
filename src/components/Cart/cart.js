@@ -2,6 +2,8 @@ import React from 'react';
 import './cart.css';
 import { inventoryData } from '../../inventoryData.js';
 import { CartContext } from '../../contexts/CartContext';
+import Total from '../../components/Total/total';
+import { Link } from 'react-router-dom';
 
 class Cart extends React.Component {
 
@@ -28,20 +30,25 @@ class Cart extends React.Component {
   static contextType = CartContext;
 
   render() {
-    const { getCart, handleAddToCart, addCart, cartItems, cartCounter, items, removeCart } = this.context;
+    const { getCart, handleAddToCart, addCart, cartItems, cartCounter, items, removeCart, clickItem } = this.context;
     // console.log('this is what were looking for', cartItems);
     return(
       <div className="cartContainer">
+
         {cartItems.map( item => {
           return(
             <div className="cartWrapper">
+            <Link to={`/store/${item.id}`} onClick={() => clickItem(item.id)}>
               <img className="itemImage cartImage" src={item.img} />
+            </Link>
               <p>{item.name}</p>
               <p>${item.price}</p>
+              <p>{item.quantity}</p>
               <button className="removeButton" onClick={() => removeCart(item.id)}>Remove from Cart</button>
             </div>
           )
         })}
+        <Total />
       </div>
     )
   }

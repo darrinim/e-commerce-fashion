@@ -9,9 +9,15 @@ const Contact = () => {
         <div className="followWrap">
           <h4 className="contactTitle">Follow us:</h4>
             <div className="iconWrap">
-              <i class="fab fa-facebook icon"></i>
-              <i class="fab fa-instagram icon"></i>
-              <i class="fab fa-twitter icon"></i>
+              <a className="icon" target= "blank" href="http://www.google.com">
+                <i class="fab fa-facebook icon"></i>
+              </a>
+              <a className="icon" target= "blank" href="http://www.google.com">
+                <i class="fab fa-instagram icon"></i>
+              </a>
+              <a className="icon" target= "blank" href="http://www.google.com">
+                <i class="fab fa-twitter icon"></i>
+              </a>
             </div>
         </div>
         <div className="customerWrap">

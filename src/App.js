@@ -7,7 +7,7 @@ import CreatedDesigned from './components/CreatedDesigned/createdDesigned';
 import Reasons from './components/Reasons/reasons';
 import Fade from 'react-reveal/Fade';
 import Trending from './components/Trending/trending';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, withRouter } from 'react-router-dom';
 import LeftNav from './components/LeftNav/leftNav';
 import RightNav from './components/RightNav/rightNav';
 import Store from './components/Store/store';
@@ -16,8 +16,12 @@ import { inventoryData } from './inventoryData';
 import Cart from './components/Cart/cart';
 import CartContextProvider from './contexts/CartContext';
 import Footer from './components/Footer/footer';
+import Item from './components/Item/item';
+import Men from './components/Men/men';
+import Women from './components/Women/women';
 
 class App extends React.Component {
+
 
 
   render() {
@@ -84,7 +88,7 @@ class App extends React.Component {
         <Header />
         <div className="storeContainer">
           <LeftNav />
-          <Store />
+          <Women />
           <RightNav />
         </div>
         <Footer />
@@ -103,7 +107,7 @@ class App extends React.Component {
         <Header />
         <div className="storeContainer">
           <LeftNav />
-          <Store />
+          <Men />
           <RightNav />
         </div>
         <Footer />
@@ -122,6 +126,29 @@ class App extends React.Component {
         <Footer />
       </>
     )}/>
+
+
+    <Route exact path="/store/:id" render={() => (
+      <>
+      <Fade
+        distance="25%"
+        bottom
+        delay={300}
+        duration={1000}
+      >
+        <Header
+        />
+        <div className="storeContainer">
+          <LeftNav />
+          <Item />
+          <RightNav />
+        </div>
+        <Footer />
+      </Fade>
+      </>
+    )}/>
+
+
 
     </Switch>
 

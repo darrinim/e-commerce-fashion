@@ -2,6 +2,8 @@ import React from 'react';
 import './inventory.css';
 import { inventoryData } from '../../../inventoryData.js';
 import { CartContext } from '../../../contexts/CartContext';
+import { Route, Link } from 'react-router-dom';
+import Item from '../../../components/Item/item';
 
 class Inventory extends React.Component {
 
@@ -30,7 +32,8 @@ class Inventory extends React.Component {
 
   render() {
 
-  const { removeCart, addCart, cartItems, cartCounter, items } = this.context;
+  const { removeCart, addCart, cartItems, cartCounter, items, clickItem } = this.context;
+
 
   return(
     <div className="inventoryContainer">
@@ -38,7 +41,11 @@ class Inventory extends React.Component {
         return(
         <div className="itemWrapper">
           <div className="pureTest">
-            <img className="itemImage" src={item.img} alt={item.name} />
+
+            <Link to={`/store/${item.id}`}>
+              <img className="itemImage" src={item.img} alt={item.name} />
+            </Link>
+
           </div>
           <div className="itemContain">
             <p className="itemName">{item.name}</p>
