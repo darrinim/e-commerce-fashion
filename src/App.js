@@ -7,32 +7,30 @@ import CreatedDesigned from './components/CreatedDesigned/createdDesigned';
 import Reasons from './components/Reasons/reasons';
 import Fade from 'react-reveal/Fade';
 import Trending from './components/Trending/trending';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, withRouter } from 'react-router-dom';
 import LeftNav from './components/LeftNav/leftNav';
 import RightNav from './components/RightNav/rightNav';
 import Store from './components/Store/store';
-import './components/LeftNav/leftNav.css';
-import './components/RightNav/rightNav.css';
 import './App.css';
 import { inventoryData } from './inventoryData';
 import Cart from './components/Cart/cart';
+import CartContextProvider from './contexts/CartContext';
+import Footer from './components/Footer/footer';
+import Item from './components/Item/item';
+import Men from './components/Men/men';
+import Women from './components/Women/women';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props)
-      this.state = {
-        items: inventoryData,
-        cartCounter: null,
-        cartItems: [],
-      }
-  }
 
 
 
   render() {
-    // console.log('YOOOOOOO', this.state.items);
+
   return (
     <div className="App">
+
+    <CartContextProvider>
+
     <Switch>
 
     <Route exact path="/" render={() => (
@@ -55,6 +53,7 @@ class App extends React.Component {
         <Reasons />
         <Hero />
         <Trending />
+        <Footer />
         </>
     )}/>
 
@@ -67,22 +66,13 @@ class App extends React.Component {
         duration={1000}
       >
         <Header
-          cartCounter={this.state.cartCounter}
-          cartItems={this.state.cartItems}
         />
         <div className="storeContainer">
           <LeftNav />
-          <Store
-            items={this.state.items}
-            addCart={this.addCart}
-            cartCounter={this.state.cartCounter}
-            cartItems={this.state.cartItems}
-          />
+          <Store />
           <RightNav />
-          <Cart />
-
         </div>
-
+        <Footer />
       </Fade>
       </>
     )}/>
@@ -98,10 +88,10 @@ class App extends React.Component {
         <Header />
         <div className="storeContainer">
           <LeftNav />
-          <Store />
+          <Women />
           <RightNav />
         </div>
-
+        <Footer />
       </Fade>
       </>
     )}/>
@@ -117,15 +107,53 @@ class App extends React.Component {
         <Header />
         <div className="storeContainer">
           <LeftNav />
-          <Store />
+          <Men />
           <RightNav />
         </div>
-
+        <Footer />
       </Fade>
       </>
     )}/>
 
+    <Route exact path="/cart" render={() => (
+      <>
+        <Header />
+        <div className="storeContainer">
+          <LeftNav />
+          <Cart />
+          <RightNav />
+        </div>
+        <Footer />
+      </>
+    )}/>
+
+
+    <Route exact path="/store/:id" render={() => (
+      <>
+      <Fade
+        distance="25%"
+        bottom
+        delay={300}
+        duration={1000}
+      >
+        <Header
+        />
+        <div className="storeContainer">
+          <LeftNav />
+          <Item />
+          <RightNav />
+        </div>
+        <Footer />
+      </Fade>
+      </>
+    )}/>
+
+
+
     </Switch>
+
+
+    </CartContextProvider>
     </div>
   );
 }

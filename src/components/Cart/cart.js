@@ -1,17 +1,13 @@
 import React from 'react';
 import './cart.css';
 import { inventoryData } from '../../inventoryData.js';
+import { CartContext } from '../../contexts/CartContext';
+import Total from '../../components/Total/total';
+import { Link } from 'react-router-dom';
 
 class Cart extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      cartItems: []
-    }
-  }
 
   componentDidMount() {
-    console.log('this is in the cart component', this.state.cartItems);
     /*
       -- WE DID THIS ON COMPONENTDIDMOUNT BECAUSE OTHERWISE WHEN WE SELECT AN ITEM, CART WOULDN'T BE UPDATED RIGHT AWAY, WOULD ONLY UPDATE UPON SECOND ITEM ADDED.
       -- USED .PARSE TO GRAB CART ITEMS FROM LOCAL STORAGE AND CONVERT IT TO JS OBJECT (DATA COMES AS A STRING)
@@ -21,19 +17,38 @@ class Cart extends React.Component {
       -- NEED THE || "[]" IN GETCART TO WORK, THIS CREATES THE CART KEY WITH THE EMPTY VALUE SO THAT THE APP DOESN'T CRASH FOR NEW USERS THAT DO NOT HAVE ANYTHING IN LOCAL STORAGE. SUPER ANNOYING ISSUE, DO NOT FORGET.
       */
 
-    let getCart = JSON.parse(localStorage.getItem('cart') || "[]")
-    let items = getCart.map( itemId => {
-      return inventoryData.find( item => item.id === itemId)
-    })
-    this.setState({
-      cartItems: items
-    });
+    // let getCart = JSON.parse(localStorage.getItem('cart') || "[]")
+    // let items = getCart.map( itemId => {
+    //   return inventoryData.find( item => item.id === itemId)
+    // })
+    // this.setState({
+    //   cartItems: items
+    // });
+
   }
 
+  static contextType = CartContext;
+
   render() {
-    console.log('check me out', this.state.cartItems);
+    const { getCart, handleAddToCart, addCart, cartItems, cartCounter, items, removeCart, clickItem } = this.context;
+    // console.log('this is what were looking for', cartItems);
     return(
-      <div>
+      <div className="cartContainer">
+
+        {cartItems.map( item => {
+          return(
+            <div className="cartWrapper">
+            <Link to={`/store/${item.id}`} onClick={() => clickItem(item.id)}>
+              <img className="itemImage cartImage" src={item.img} />
+            </Link>
+              <p>{item.name}</p>
+              <p>${item.price}</p>
+              <p>{item.quantity}</p>
+              <button className="removeButton" onClick={() => removeCart(item.id)}>Remove from Cart</button>
+            </div>
+          )
+        })}
+        <Total />
       </div>
     )
   }

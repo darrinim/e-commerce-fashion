@@ -1,11 +1,3 @@
-.itemImage {
-  width: 80%;
-  border: solid #fff;
-  border-width:10px 10px 4rem 10px;
-  box-shadow:1px 1px 5px #333;
-  /* filter: sepia(60%); */
-  /* filter: grayscale(0%); */
-}
 .inventoryContainer {
   width: 100%;
   margin: 0 auto;
@@ -18,21 +10,69 @@
 .itemWrapper {
   width: 30%;
   margin: 15px;
+  position: relative;
+  cursor: pointer;
+  border: 4px solid white;
+  opacity: 1;
+  padding-bottom: 20px;
 }
-.itemImage:hover {
+.addCartButtonConst {
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+.addCartButtonConst:hover {
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  border-radius: 0px;
+  transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+}
+/* .itemImage:hover {
   outline: 1px solid;
   transform: rotate(3deg);
   outline-width: thin;
   outline-color: rgba(0,0,0,0.45);
-  /* outline-offset: 5px; */
+  outline-offset: 5px;
   filter: grayscale(100%);
   transition: filter 0.5s, transform 0.3s;
   cursor: pointer;
-}
+} */
+
+/* BELOW IS FOR TESTING */
+/* .itemImage:hover {
+  border-color: black;
+  cursor: pointer;
+  transition: border-color 0.4s;
+} */
 .itemName .itemPrice {
   width: 100%;
 }
-
+.addCartButton {
+  cursor: pointer;
+  background-color: black;
+  padding: 2px 0;
+  color: #FFFFFF;
+  width: 79%;
+  outline: none;
+  border: none;
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* visibility: hidden; */
+  opacity: 0;
+  background-color: rgba(0,0,0,0.6);
+}
+div.itemWrapper:hover .addCartButton{
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+div.itemWrapper:hover{
+  transition: opacity 0.5s, border-color 0.5s;
+  border-color: rgba(0,0,0,0.6);
+}
+/*
 @media (max-width: 1024px) {
   .itemImage {
     border-width: 10px 10px 3em 10px;
@@ -52,4 +92,33 @@
   .itemImage {
       border-width: 5px 5px 1.1em 5px;
   }
+} */
+
+
+
+
+/* BELOW IS TESTING */
+
+.itemImage {
+  width: 80%;
+  padding: 20px;
 }
+/* .pureTest::after {
+  content: "";
+  display: block;
+  border: 1px solid black;
+  width: 0%;
+}
+.pureTest:hover::after {
+  width: 100%;
+}
+.pureTest::before {
+  content: "";
+  display: block;
+  border: 1px solid black;
+  width: 0%;
+  transform: translate(-100%, -50%), rotateX(90deg);
+}
+.pureTest:hover::before {
+  width: 100%;
+} */

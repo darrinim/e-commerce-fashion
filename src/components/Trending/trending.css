@@ -18,7 +18,10 @@
 }
 .trendingTitle {
   text-align: center;
-  font-size: calc(20px + (80 - 20) * ((100vw - 300px) / (1600 - 300)));
-  font-weight: 400;
+  font-size: calc(20px + (60 - 20) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: 300;
   margin-bottom: 0;
+}
+.trendingImage {
+  text-align: center;
 }

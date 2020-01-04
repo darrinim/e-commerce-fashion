@@ -18,7 +18,7 @@ const Created = () => {
     </Fade>
     <Fade distance="20px" right>
       <div className="createdTextWrapper">
-        <h2 className="creDesTextTitle">Created ...</h2>
+        <h2 className="creDesTextTitle">Created</h2>
         <p className="creDesText">With you in mind and some other stuff about how we're made with high quality materials and we're the shit. Here's another sentence because just the last one looked really short.</p>
       </div>
     </Fade>

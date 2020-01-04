@@ -1,0 +1,49 @@
+.itemContainer {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* border: 1px solid black; */
+}
+.itemImgWrap {
+  width: 50%;
+  /* border: 1px solid black; */
+}
+.itemImg {
+  width: 100%;
+}
+.itemInfoWrap {
+  width: 50%;
+  /* border: 1px solid red; */
+  padding: 15px;
+  position: relative;
+}
+.itemReview {
+  font-style: italic;
+}
+.itemName {
+  margin: 0;
+}
+.the {
+  margin-bottom: 5px;
+}
+.itemPrice {
+  margin-top: 5px;
+}
+.backLink {
+  color: black;
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+@media (max-width: 768px) {
+  .itemContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .itemInfoWrap {
+    text-align: center;
+    width: 100%;
+  }
+  .itemImgWrap {
+    width: 80%;
+  }
+}

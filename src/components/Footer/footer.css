@@ -1,0 +1,33 @@
+.footerContainer {
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid black; */
+  margin-top: 5%;
+  display: flex;
+  background-color: rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .footerContainer {
+    margin-top: 10%;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contactLinksWrap {
+    margin: 0;
+    width: 50%;
+  }
+  .contactMainWrap {
+    width: 50%;
+    margin-right: 0;
+  }
+  .contactContainer {
+    text-align: center;
+  }
+}
+@media (max-width: 425px) {
+  .footerContainer {
+    margin-top: 16%;
+  }
+}

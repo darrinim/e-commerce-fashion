@@ -1,0 +1,22 @@
+.cartContainer {
+  width: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+.cartWrapper {
+  width: 30%;
+  margin: 15px;
+  text-align: center;
+}
+.removeButton {
+  background-color: transparent;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+.removeButton:hover {
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  transition: background-color 0.2s, color 0.2s;
+}
