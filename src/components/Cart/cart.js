@@ -34,20 +34,22 @@ class Cart extends React.Component {
     // console.log('this is what were looking for', cartItems);
     return(
       <div className="cartContainer">
-
+      <h2 className="cartTitle">Shopping Cart</h2>
+        <div className="cartouterWrapper">
         {cartItems.map( item => {
           return(
             <div className="cartWrapper">
-            <Link to={`/store/${item.id}`} onClick={() => clickItem(item.id)}>
-              <img className="itemImage cartImage" src={item.img} />
-            </Link>
-              <p>{item.name}</p>
-              <p>${item.price}</p>
-              <p>{item.quantity}</p>
-              <button className="removeButton" onClick={() => removeCart(item.id)}>Remove from Cart</button>
+              <button className="removeButton" onClick={() => removeCart(item.id)}><i class="fas fa-times"></i></button>
+              <Link to={`/store/${item.id}`}>
+                <img className="cartImage" src={item.img} />
+              </Link>
+              <p className="cart">{item.name}</p>
+              <p className="cart">Quantity:&nbsp;{item.quantity}</p>
+              <p className="cart">${item.price}</p>
             </div>
           )
         })}
+        </div>
         <Total />
       </div>
     )

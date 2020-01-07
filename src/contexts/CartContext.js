@@ -11,19 +11,14 @@ class CartContextProvider extends Component {
     cartItems: [],
     activeItem: [],
     subtotal: 0,
+    checkout: false,
   }
 
-  // clickItem = (id) => {
-  //
-  //   let active = inventoryData.find( item => {
-  //     return item.id === id
-  //   })
-  //   this.setState({
-  //     activeItem: active
-  //   })
-  // }
-
-  
+  checkoutModal = (e) => {
+    this.setState({
+      checkout: !this.state.checkout
+    })
+  }
 
   getTotal = () => {
     let getCart = JSON.parse(localStorage.getItem('cart') || "[]")
@@ -117,7 +112,7 @@ class CartContextProvider extends Component {
     console.log('this is cartItems state', this.state.cartItems);
     return (
       // context provider allows us to send state/functions to it's children
-      <CartContext.Provider value={{...this.state, addCart: this.addCart, handleAddToCart: this.handleAddToCart, getCart: this.getCart, removeCart: this.removeCart, clickItem: this.clickItem, getTotal: this.getTotal }}>
+      <CartContext.Provider value={{...this.state, addCart: this.addCart, handleAddToCart: this.handleAddToCart, getCart: this.getCart, removeCart: this.removeCart, clickItem: this.clickItem, getTotal: this.getTotal, checkoutModal: this.checkoutModal }}>
         {this.props.children}
       </CartContext.Provider>
     )
