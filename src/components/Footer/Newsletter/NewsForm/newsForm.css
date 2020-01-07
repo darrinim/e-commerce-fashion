@@ -7,6 +7,7 @@
   border: none;
   color: white;
   height: 3em;
+  padding-left: 10px;
 }
 .emailInput::placeholder {
   color: white;
@@ -16,6 +17,9 @@
   width: 25%;
   border: none;
   height: 3em;
+}
+form {
+
 }
 @media(max-width: 768px) {
   .emailInput {

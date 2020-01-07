@@ -25,6 +25,14 @@
 .navStyles > a:nth-of-type(2) {
   margin: 0 10px;
 }
+.linkNav {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+.linkNav:hover {
+  border-bottom-color: gray;
+  transition: border-bottom-color 0.4s;
+}
 
 .storeOuterContainer {
     width: 85%;

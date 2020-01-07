@@ -24,13 +24,13 @@ class Store extends React.Component {
         <h2 className="allStylesTitle">All Styles</h2>
         <h3 className="allStyleText">Find your perfect look</h3>
         <ul className="navStyles">
-          <Link to="/store/men">
+          <Link className="linkNav" to="/store/men">
             <li>Men</li>
           </Link>
-          <Link to="/store/women">
+          <Link className="linkNav" to="/store/women">
             <li>Women</li>
           </Link>
-          <Link to="/store">
+          <Link className="linkNav" to="/store">
             <li>All</li>
           </Link>
         </ul>

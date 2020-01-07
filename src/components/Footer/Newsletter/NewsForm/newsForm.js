@@ -6,7 +6,7 @@ const NewsForm = () => {
 
   return(
     <div className="newsFormContainer">
-      <form>
+      <form action="mailto:darrinj.im@gmail.com">
         <input className="emailInput" type="text" placeholder="Email"></input>
         <button className="emailSubmit">Submit</button>
       </form>
