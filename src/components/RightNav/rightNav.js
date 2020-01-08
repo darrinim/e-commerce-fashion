@@ -18,7 +18,6 @@ class RightNav extends React.Component {
       <ul className="rightNavWrap sideNav">
         <li className="rightNavIcon cartImg">
           <Link to='/cart' className="cart">
-{/*            <i className="fas fa-shopping-cart"></i>*/}
             <img className="newCart" src="https://res.cloudinary.com/darrin-im/image/upload/v1576522113/cart-icon_orxkjo.png" />
             <span className="cartNumber">&nbsp;{cartTotalItems}</span>
           </Link>

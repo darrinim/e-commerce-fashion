@@ -1,9 +1,10 @@
 .homeContainer {
   /* border: 1px solid green; */
-  height: 100%;
+  /* height: 100%; */
   /* width: 85%; */
   margin: 0 auto;
   display: flex;
+  /* max-height: 550px; */
 }
 .homeImageWrap {
   height: 100%;

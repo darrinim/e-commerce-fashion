@@ -12,7 +12,7 @@ class Header extends React.Component {
     const { removeCart, getCart, handleAddToCart, addCart, cartItems, cartCounter, items } = this.context;
     const cartTotalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
   return(
-
+  <div className="headerOuterContainer">
     <div className="headerContainer">
       <div className="headerOuterWrap">
         <ul className="headerWrap">
@@ -37,6 +37,8 @@ class Header extends React.Component {
         <h1 className="storeTitle"><span className="sonnen">Sonnen</span>brille</h1>
       </Link>
     </div>
+</div>
+
 
   )
 }

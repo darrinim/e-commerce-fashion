@@ -34,6 +34,9 @@
   position: absolute;
   bottom: 0;
 }
+.backLink:hover {
+  color: gray;
+}
 @media (max-width: 768px) {
   .itemContainer {
     flex-wrap: wrap;
@@ -45,5 +48,14 @@
   }
   .itemImgWrap {
     width: 80%;
+  }
+  .backLink {
+    text-decoration: none;
+    color: black;
+    display: block;
+    position: relative;
+    width: fit-content;
+    margin: 15px auto 0 auto;
+    border-bottom: 1px solid black;
   }
 }
