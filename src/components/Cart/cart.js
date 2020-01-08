@@ -30,16 +30,19 @@ class Cart extends React.Component {
   static contextType = CartContext;
 
   render() {
-    const { getCart, handleAddToCart, addCart, cartItems, cartCounter, items, removeCart, clickItem } = this.context;
-    // console.log('this is what were looking for', cartItems);
+
+    const { cartItems, removeCart } = this.context;
+
     return(
       <div className="cartContainer">
-      <h2 className="cartTitle">Shopping Cart</h2>
+        <h2 className="cartTitle">Shopping Cart</h2>
         <div className="cartouterWrapper">
         {cartItems.map( item => {
           return(
             <div className="cartWrapper">
-              <button className="removeButton" onClick={() => removeCart(item.id)}><i class="fas fa-times"></i></button>
+              <button className="removeButton" onClick={() => removeCart(item.id)}>
+                <i class="fas fa-times"></i>
+              </button>
               <Link to={`/store/${item.id}`}>
                 <img className="cartImage" src={item.img} />
               </Link>

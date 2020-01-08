@@ -15,14 +15,13 @@ class Store extends React.Component {
   render() {
     return(
       <div className="storeOuterContainer">
-{/*      <img
-        className="storeHero"
-        src="https://res.cloudinary.com/darrin-im/image/upload/v1577759666/mens-style-hero_copy_gil5rh.jpg" /> */}
-       <img
+        <img
           className="storeHero"
-          src="https://res.cloudinary.com/darrin-im/image/upload/v1577046136/landing-hero_copy_y5jzpg.jpg" />
+          src="https://res.cloudinary.com/darrin-im/image/upload/v1577046136/landing-hero_copy_y5jzpg.jpg"
+        />
         <h2 className="allStylesTitle">All Styles</h2>
         <h3 className="allStyleText">Find your perfect look</h3>
+
         <ul className="navStyles">
           <Link className="linkNav" to="/store/men">
             <li>Men</li>
@@ -34,9 +33,7 @@ class Store extends React.Component {
             <li>All</li>
           </Link>
         </ul>
-
-          <Inventory />
-
+        <Inventory />
       </div>
     )
   }

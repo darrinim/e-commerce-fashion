@@ -8,7 +8,6 @@
 .heroImage {
   width: 100%;
 }
-
 .heroTitle {
   position: absolute;
   top: 25%;
@@ -18,4 +17,9 @@
   color: black;
   text-shadow: 2px 2px rgba(255,255,255,0.8);
   font-weight: 300;
+}
+@media (max-width: 425px) {
+  .heroContainer {
+    width: 100%;
+  }
 }

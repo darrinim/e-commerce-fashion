@@ -5,6 +5,7 @@ const Contact = () => {
 
   return(
     <div className="contactContainer">
+
       <div className="contactMainWrap">
         <div className="followWrap">
           <h4 className="contactTitle">Follow us:</h4>
@@ -39,6 +40,7 @@ const Contact = () => {
           <li><a href="https://www.linkedin.com/in/darrin-im/">Cookie Policy</a></li>
         </ul>
       </div>
+
     </div>
   )
 }

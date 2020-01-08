@@ -1,5 +1,4 @@
 .reasonsContainer {
-  /* border: 1px solid black; */
   display: flex;
   justify-content: space-around;
   height: 100%;
@@ -9,7 +8,6 @@
 }
 .reasonImg {
   width: 40%;
-  /* background-color: red; */
 }
 .reasonTitle {
   font-size: calc(16px + (40 - 16) * ((100vw - 300px) / (1600 - 300)));
@@ -20,6 +18,8 @@
   margin: 0 auto;
   font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
+
+
 @media (max-width: 425px) {
   .reasonText {
     font-size: calc(10px + (24 - 10) * ((100vw - 300px) / (1600 - 300)));

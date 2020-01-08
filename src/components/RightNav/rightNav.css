@@ -1,24 +1,22 @@
-/* BELOW IS FOR BOTH SIDE NAV GENERAL CSS */
 .sideNav {
   margin: 0 auto;
   height: 100%;
   padding-left: 0;
   list-style-type: none;
   text-align: center;
-  /* border-bottom: 1px solid; */
 }
-/* .rightNavContainer {
+.rightNavContainer {
   width: 9%;
-  max-height: 550px;
-
-} */
+  position: fixed;
+  right: 0;
+  top: 20%;
+  float: right;
+}
 .rightNavWrap {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   position: sticky;
-  position: -webkit-sticky;
   top: 0;
 }
 .rightNavIcon {
@@ -32,8 +30,6 @@
 .cart {
   background-color: transparent;
   border: none;
-  /* font-size: 1.1em; */
-  /* display: flex; */
   text-decoration: none;
   color: black;
   margin: auto 0;
@@ -51,33 +47,10 @@
 }
 .newCart {
   width: 25%;
-  /* margin: 0 42% 0 auto; */
-  /* font-size: 15px; */
-  /* margin-bottom: calc(0.5rem + (90 - 0.5) * ((100vw - 300px) / (1600 - 300))); */
 }
 .icon {
   color: black;
 }
-
-/* TEST!!! */
-
-.rightNavContainer {
-    width: 9%;
-    /* max-height: 550px; */
-    position: fixed;
-    /* top: 0; */
-    right: 0;
-    top: 20%;
-    /* height: 1000px; */
-    /* position: sticky; */
-    /* z-index: 1; */
-    float: right;
-}
-.sideTest {
-  writing-mode: vertical-rl;
-text-orientation: upright;
-}
-
 @media (max-width: 425px) {
   .newCart {
     width: 50%;

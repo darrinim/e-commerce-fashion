@@ -1,5 +1,4 @@
 .contactContainer {
-  /* border-right: 1px solid white; */
   display: flex;
   flex-wrap: wrap;
   font-size: 17px;
@@ -7,7 +6,6 @@
   width: 50%;
 }
 .contactMainWrap {
-  /* border: 1px solid black; */
   padding: 0 1em;
   margin-right: 3em;
 }
@@ -18,7 +16,6 @@
   list-style-type: none;
   padding-left: 0;
   padding-top: 10px;
-  /* border: 1px solid black; */
 }
 .linksInnerWrap > li {
   margin-bottom: 1em;
@@ -26,9 +23,6 @@
 .linksInnerWrap > li > a {
   text-decoration: none;
   color: black;
-}
-.contactLinksWrap {
-  /* margin: 0 auto; */
 }
 .contactLink {
   color: black;

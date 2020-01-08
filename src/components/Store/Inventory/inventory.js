@@ -7,8 +7,6 @@ import Item from '../../../components/Item/item';
 
 class Inventory extends React.Component {
 
-
-
   // addCart = (item) => {
   //
   //   console.log('add cart function', item)
@@ -26,41 +24,38 @@ class Inventory extends React.Component {
   //   })
   // }
 
-
-
   static contextType = CartContext;
 
   render() {
 
-  const { removeCart, addCart, cartItems, cartCounter, items, clickItem } = this.context;
+    const { removeCart, addCart, cartItems, cartCounter, items, clickItem } = this.context;
 
 
-  return(
-    <div className="inventoryContainer">
-      { inventoryData.map( item => {
-        return(
-        <div className="itemWrapper">
-          <div className="pureTest">
-
-            <Link to={`/store/${item.id}`}>
-              <img className="itemImage" src={item.img} alt={item.name} />
-            </Link>
-
-          </div>
-          <div className="itemContain">
-            <p className="itemName">{item.name}</p>
-            <p className="itemPrice">${item.price}</p>
-              <button
-                className="addCartButtonConst"
-                onClick={() => addCart(item)}>
-                <i className="fas fa-shopping-cart"></i> &nbsp;Add to Cart</button>
-          </div>
-        </div>
-        )
-      })}
-    </div>
-  )
-}
+    return(
+      <div className="inventoryContainer">
+        { inventoryData.map( item => {
+          return(
+            <div className="itemWrapper">
+              <div className="pureTest">
+                <Link to={`/store/${item.id}`}>
+                  <img className="itemImage" src={item.img} alt={item.name} />
+                </Link>
+              </div>
+              <div className="itemContain">
+                <p className="itemName">{item.name}</p>
+                <p className="itemPrice">${item.price}</p>
+                <button
+                  className="addCartButtonConst"
+                  onClick={() => addCart(item)}>
+                  <i className="fas fa-shopping-cart"></i> &nbsp;Add to Cart
+                </button>
+              </div>
+            </div>
+          )
+        })}
+      </div>
+    )
+  }
 }
 
 export default Inventory;

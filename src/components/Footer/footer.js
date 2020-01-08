@@ -8,10 +8,10 @@ const Footer = () => {
 
   return(
     <>
-    <div className="footerContainer">
-      <Contact />
-      <Newsletter />
-    </div>
+      <div className="footerContainer">
+        <Contact />
+        <Newsletter />
+      </div>
       <Copyright />
     </>
   )

@@ -2,7 +2,6 @@ import React from 'react';
 import './createdDesigned.css';
 import Created from '../../components/Created/created';
 import Designed from '../../components/Designed/designed';
-import 'pure-react-carousel/dist/react-carousel.es.css';
 
 class CreatedDesigned extends React.Component {
 

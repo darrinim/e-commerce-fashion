@@ -112,7 +112,9 @@ class CartContextProvider extends Component {
     console.log('this is cartItems state', this.state.cartItems);
     return (
       // context provider allows us to send state/functions to it's children
-      <CartContext.Provider value={{...this.state, addCart: this.addCart, handleAddToCart: this.handleAddToCart, getCart: this.getCart, removeCart: this.removeCart, clickItem: this.clickItem, getTotal: this.getTotal, checkoutModal: this.checkoutModal }}>
+      <CartContext.Provider
+        value={{...this.state, addCart: this.addCart, handleAddToCart: this.handleAddToCart, getCart: this.getCart, removeCart: this.removeCart, clickItem: this.clickItem, getTotal: this.getTotal, checkoutModal: this.checkoutModal }}
+      >
         {this.props.children}
       </CartContext.Provider>
     )

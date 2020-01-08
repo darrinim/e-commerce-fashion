@@ -86,11 +86,11 @@ class App extends React.Component {
                 >
                   <div>
                     <Header />
-                      <div className="storeContainer">
-                        <LeftNav />
-                        <Women />
-                        <RightNav />
-                      </div>
+                    <div className="storeContainer">
+                      <LeftNav />
+                      <Women />
+                      <RightNav />
+                    </div>
                     <Footer />
                   </div>
                 </Fade>
@@ -106,7 +106,7 @@ class App extends React.Component {
                   duration={1000}
                 >
                   <div>
-                  <Header />
+                    <Header />
                     <div className="storeContainer">
                       <LeftNav />
                       <Men />
@@ -141,11 +141,11 @@ class App extends React.Component {
                 >
                   <div>
                     <Header/>
-                      <div className="storeContainer">
-                        <LeftNav />
-                        <Item />
-                        <RightNav />
-                      </div>
+                    <div className="storeContainer">
+                      <LeftNav />
+                      <Item />
+                      <RightNav />
+                    </div>
                     <Footer />
                   </div>
                 </Fade>

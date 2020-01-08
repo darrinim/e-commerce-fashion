@@ -1,24 +1,6 @@
-.optContainer {
-  width: 100%;
-  height: 100%;
-}
-.optWrap {
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.optionImage {
-  width: 100%;
-  height: 90%;
-  transition: transform .5s;
-  /* transform: scale(1.05); */
-  filter: blur(0)
-}
-.optionImage:hover {
-  cursor: pointer;
-  transform: scale(1.05);
-  filter: blur(2px)
-  /* transform: scale(1.05);
-  filter: blur(0); */
+.styleOptionsContainer {
+  width: 85%;
+  margin: 5% auto 0 auto;
 }
 .styleOptionsWrap {
   display: flex;
@@ -27,28 +9,27 @@
 .styleOptions {
   padding: 8px;
   position: relative;
-  /* overflow: hidden; */
-}
-.styleOptions:hover .styleTitle {
-  transition: color 0.5s;
-  cursor: pointer;
-  /* color: #f50c4c; */
-  text-shadow: 1px 1px black;
-}
-.styleOptionsContainer {
-  width: 85%;
-  margin: 5% auto 0 auto;
 }
 .styleTitle {
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* font-size: 4.3em; */
   font-size: calc(20px + (80 - 20) * ((100vw - 300px) / (1600 - 300)));
   color: white;
   font-weight: 300;
   text-shadow: 1px 1px black;
+}
+.optionImage {
+  width: 100%;
+  height: 90%;
+  transition: transform .5s;
+  filter: blur(0)
+}
+.optionImage:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  filter: blur(2px)
 }
 @media (max-width: 425px) {
   .styleOptions {

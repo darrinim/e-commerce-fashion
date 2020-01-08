@@ -1,14 +1,8 @@
-/* .storeOuterContainer {
+.storeOuterContainer {
   width: 85%;
   margin: 0 auto;
   text-align: center;
-  border: 1px solid black;
-  border: 1px solid rgba(0,0,0,0.25);
-  background-color: #E8D6D1;
-} */
-
-/* BELOW IS FOR TESTING */
-
+}
 .inventoryTitleWrap {
   text-align: center;
   width: 85%;
@@ -34,20 +28,18 @@
   border-bottom-color: gray;
   transition: border-bottom-color 0.4s;
 }
-
-.storeOuterContainer {
-    width: 85%;
-    margin: 0 auto;
-    text-align: center;
-    /* border: 1px solid black; */
-    /* border: 1px solid rgba(0,0,0,0.25); */
-    /* background-color: #f2f2f2; */
-    /* outline: solid white thick; */
-}
 .allStylesTitle, .allStyleText {
   font-weight: 300;
   font-size: calc(10px + (35 - 10) * ((100vw - 300px) / (1600 - 300)));
 }
 .storeHero {
   width: 100%;
+}
+@media (max-width: 425px) {
+  .inventoryTitleWrap {
+    width: 100%;
+  }
+  .storeOuterContainer {
+    width: 100%;
+  }
 }

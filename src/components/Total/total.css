@@ -1,6 +1,4 @@
 .cartTotal {
-  /* position: absolute; */
-  /* top: 0; */
   display: flex;
   justify-content: space-between;
 }
@@ -40,14 +38,12 @@
 }
 .checkoutInnerThanks > div {
   display: flex;
-  /* justify-content: space-between; */
 }
 .checkoutInnerThanks > div > h2 {
   width: 100%;
   text-align: center;
 }
-.checkoutInnerThanks > div > i{
-  /* margin: auto 10px auto auto; */
+.checkoutInnerThanks > div > i {
   padding: 10px;
   position: absolute;
   right: 0;

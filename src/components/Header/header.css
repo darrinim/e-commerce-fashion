@@ -2,35 +2,26 @@
 
 body {
   background-color: #FFF7F2;
-    font-family: 'Raleway';
+  font-family: 'Raleway';
 }
 .headerOuterContainer {
   width: 100%;
   background-color: #FFF7F2;
   position: sticky;
-    top: 0;
-    z-index: 1100;
+  top: 0;
+  z-index: 1100;
+}
+.headerWrap {
+  display: flex;
+  flex-direction: column;
 }
 .headerContainer {
-  /* border: 1px solid black; */
   width: 85%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  /* justify-content: flex-end; */
-
-}
-.navWrap {
-    display: none;
-  /* display: flex; */
-  list-style-type: none;
-  /* border: 1px solid black; */
-  width: 30%;
-  justify-content: space-between;
-  padding: 0;
 }
 .navLink {
-  /* border: 1px solid red; */
   font-size: 1.4rem;
   padding-top: 25px;
   font-family: 'Josefin Slab', serif;
@@ -38,11 +29,9 @@ body {
   margin-bottom: 0;
 }
 .storeTitle {
-  /* font-size: 2.9rem; */
   font-size: calc(1.5rem + (40 - 1.5) * ((100vw - 300px) / (1600 - 300)));
   font-family: 'Cinzel', serif;
   font-weight: 400;
-
   margin: 20px 0 0 0;
 }
 .titleWrapper {
@@ -59,33 +48,36 @@ body {
 }
 .title > li {
   border-bottom: 1px solid #FFF7F2;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .title > li:hover {
-  color: gray;
-  border-bottom-color: gray;
-  transition: color 0.5s, border-bottom-color 0.5s;
+  color: rgba(0,0,0,0.6);
+}
+.title > li::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  padding-top: 3px;
+  border-bottom: 1px solid #FFF7F2;
+}
+.title > li:hover::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  padding-top: 3px;
+  border-bottom: 1px solid rgba(0,0,0,0.6);;
+  transition: border-bottom 0.5s, color 0.5s;
 }
 .headerWrap {
-  display: flex;
   list-style-type: none;
-  height: 100%;
-  margin: auto 0;
   padding: 0;
-  font-size: 20px;
-  justify-content: space-between;
-  /* width: 20%; */
 }
 .headerOuterWrap {
   margin: auto 0;
 }
-/*
-font-family: 'Baskervville', serif;
-font-family: 'Cormorant Garamond', serif;
-font-family: 'Cinzel', serif;
-font-family: 'Josefin Slab', serif;
-font-family: 'Prata', serif;
-font-family: 'Spectral', serif;
-font-family: 'Noto Serif KR', serif; */
 
 /* Position and sizing of burger button */
 .bm-burger-button {
@@ -128,7 +120,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
+  background: #FFF7F2;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
@@ -154,14 +146,30 @@ Note: Beware of modifying this element as it can break the animations - you shou
   background: rgba(0, 0, 0, 0.3);
 }
 
-@media (min-width: 375px) {
+/* MEDIA QUERIES */
+
+
+@media (max-width: 375px) {
+  .bm-burger-button {
+    top: 25px;
+    left: 10px;
+  }
   .storeTitle {
-    /* font-size: 2rem; */
+    margin: 20px -20px 0 0;
+  }
+}
+@media (min-width: 375px) {
+  .bm-burger-button {
+    top: 25px;
+  }
+}
+@media (min-width: 425px) {
+  .bm-burger-button {
+    top: 25px;
   }
 }
 @media (max-width: 425px) {
   .headerOuterWrap {
-    /* font-size: 2rem; */
     margin: auto;
   }
   .headerContainer {
@@ -173,25 +181,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
   .storeTitle {
     font-size: 35px;
     margin-bottom: 0;
-  }
-}
-@media (max-width: 375px) {
-  .bm-burger-button {
-    top: 25px;
-    left: 10px;
-  }
-  .storeTitle {
-    margin: 20px -20px 0 0;  
-  }
-}
-@media (min-width: 375px) {
-  .bm-burger-button {
-    top: 25px;
-  }
-}
-@media (min-width: 425px) {
-  .bm-burger-button {
-    top: 25px;
   }
 }
 @media (min-width: 768px) {

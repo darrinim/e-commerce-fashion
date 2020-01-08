@@ -1,7 +1,7 @@
 import React from 'react';
 import { inventoryData } from '../../inventoryData.js';
 import { CartContext } from '../../contexts/CartContext';
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Item from '../../components/Item/item';
 
 class Women extends React.Component {
@@ -11,17 +11,16 @@ class Women extends React.Component {
 
   render() {
 
-  const { removeCart, addCart, cartItems, cartCounter, items, clickItem } = this.context;
-  let womensInventory = inventoryData.filter( items => items.type === "womens")
-  console.log('womens inventory', womensInventory);
+    const { addCart, items} = this.context;
+    let womensInventory = inventoryData.filter( items => items.type === "womens")
 
-  return(
+    return (
       <div className="inventoryContainer">
-
-      <div className="inventoryTitleWrap">
-        <img
-          className="storeHero"
-          src="https://res.cloudinary.com/darrin-im/image/upload/v1577748533/store-hero_rlev2b.jpg" />
+        <div className="inventoryTitleWrap">
+          <img
+            className="storeHero"
+            src="https://res.cloudinary.com/darrin-im/image/upload/v1577748533/store-hero_rlev2b.jpg"
+          />
           <h2 className="allStylesTitle">All Styles</h2>
           <h3 className="allStyleText">Find your perfect look</h3>
           <ul className="navStyles">
@@ -35,32 +34,32 @@ class Women extends React.Component {
               <li>All</li>
             </Link>
           </ul>
-      </div>
-
-      { womensInventory.map( item => {
-        return(
-        <div className="itemWrapper">
-          <div className="pureTest">
-
-            <Link to={`/store/${item.id}`}>
-              <img className="itemImage" src={item.img} alt={item.name} />
-            </Link>
-
-          </div>
-          <div className="itemContain">
-            <p className="itemName">{item.name}</p>
-            <p className="itemPrice">${item.price}</p>
-              <button
-                className="addCartButtonConst"
-                onClick={() => addCart(item)}>
-                <i className="fas fa-shopping-cart"></i> &nbsp;Add to Cart</button>
-          </div>
         </div>
-        )
-      })}
-    </div>
-  )
-}
+        <div className="outerItemWrap">
+          { womensInventory.map( item => {
+            return (
+              <div className="itemWrapper">
+                <div className="pureTest">
+                  <Link to={`/store/${item.id}`}>
+                    <img className="itemImage" src={item.img} alt={item.name} />
+                  </Link>
+                </div>
+                <div className="itemContain">
+                  <p className="itemName">{item.name}</p>
+                  <p className="itemPrice">${item.price}</p>
+                    <button
+                      className="addCartButtonConst"
+                      onClick={() => addCart(item)}>
+                      <i className="fas fa-shopping-cart"></i> &nbsp;Add to Cart
+                    </button>
+                </div>
+              </div>
+            )
+          })}
+        </div>
+      </div>
+    )
+  }
 }
 
 export default Women;

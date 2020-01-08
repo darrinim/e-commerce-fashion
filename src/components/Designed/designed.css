@@ -14,6 +14,11 @@
   grid-area: designedImg;
 }
 
+@media (max-width: 425px) {
+  .designedContainer {
+    width: 100%;
+  }
+}
 @media (max-width: 768px) {
   .designedContainer {
     display: flex;
@@ -23,10 +28,5 @@
   }
   .designedTextWrapper {
     padding: 0;
-  }
-}
-@media (max-width: 425px) {
-  .designedContainer {
-    width: 100%;
   }
 }

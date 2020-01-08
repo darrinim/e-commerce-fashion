@@ -12,7 +12,7 @@ const Hero = () => {
           src="https://res.cloudinary.com/darrin-im/image/upload/v1576002738/hero-sunglasses_xyrbpu.jpg"
           alt='hero'
         />
-      <p className="heroTitle">Signature Looks</p>
+        <p className="heroTitle">Signature Looks</p>
       </Link>
     </div>
   )

@@ -3,7 +3,6 @@
    width: 100%;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: auto;
-   /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
    grid-template-areas:
      "createdImg createdText";
  }
@@ -12,44 +11,42 @@
  }
  .createdTextWrapper {
    grid-area: createdText;
-  padding: 15px;
+   padding: 15px;
  }
  .creDesTextTitle {
-   /* color: #f50c4c; */
    font-size: 2em;
-  font-size: calc(18px + (40 - 18) * ((100vw - 300px) / (1600 - 300)));
-   /* text-transform: uppercase; */
+   font-size: calc(18px + (40 - 18) * ((100vw - 300px) / (1600 - 300)));
    text-shadow: 1px 1px white;
    font-weight: 300;
  }
  .creDesText {
   font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
  }
-  .creDesTextTitle::after {
-    content: "";
-    bottom: 6px;
-    display: block;
-    width: 40%;
-    padding-top: 9px;
-    /* border-bottom: 1px solid black; */
-  }
+.creDesTextTitle::after {
+  content: "";
+  bottom: 6px;
+  display: block;
+  width: 40%;
+  padding-top: 9px;
+}
 
- @media (max-width: 768px) {
-   .createdContainer {
-     display: flex;
-     flex-direction: column;
-     width: 80%;
-     margin: 0 auto;
-   }
-   .createdImgWrapper {
-      margin: 0 auto;
-   }
-   .createdTextWrapper {
-    padding: 0;
-   }
+
+@media (max-width: 425px) {
+ .createdContainer {
+   width: 100%;
  }
- @media (max-width: 425px) {
-   .createdContainer {
-     width: 100%;
-   }
+}
+@media (max-width: 768px) {
+ .createdContainer {
+   display: flex;
+   flex-direction: column;
+   width: 80%;
+   margin: 0 auto;
  }
+ .createdImgWrapper {
+    margin: 0 auto;
+ }
+ .createdTextWrapper {
+  padding: 0;
+ }
+}

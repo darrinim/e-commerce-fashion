@@ -1,18 +1,15 @@
 .itemContainer {
   display: flex;
-  /* flex-wrap: wrap; */
-  /* border: 1px solid black; */
+  width: 85%;
 }
 .itemImgWrap {
   width: 50%;
-  /* border: 1px solid black; */
 }
 .itemImg {
   width: 100%;
 }
 .itemInfoWrap {
   width: 40%;
-  /* border: 1px solid red; */
   padding: 15px;
   position: relative;
 }
@@ -57,5 +54,10 @@
     width: fit-content;
     margin: 15px auto 0 auto;
     border-bottom: 1px solid black;
+  }
+}
+@media(max-width: 1024px) {
+  .backLink {
+    bottom: -20px;
   }
 }

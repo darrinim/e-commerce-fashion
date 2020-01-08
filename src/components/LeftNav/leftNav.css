@@ -1,51 +1,31 @@
 .leftNavWrap {
-  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   padding-left: 0;
 }
-/* .leftNavContainer {
+.leftNavText {
+  writing-mode: vertical-rl;
+  padding: 0 50% 0 50%;
+  font-size: calc(5px + (14 - 5) * ((100vw - 300px) / (1600 - 300)));
+}
+.leftNavContainer {
   width: 9%;
   max-height: 550px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-} */
-
-.leftNavText {
-  writing-mode: vertical-rl;
-  padding: 0 50% 0 50%;
-  font-size: calc(5px + (14 - 5) * ((100vw - 300px) / (1600 - 300)));
-}
-
-
-/* TEST!!! */
-
-.leftNavContainer {
-    width: 9%;
-    max-height: 550px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 0;
-    top: 25%;
-}
-@media(max-width: 1024px) {
-  .leftNavContainer {
-    top: 20%;
-  }
+  position: absolute;
+  left: 0;
+  top: 25%;
 }
 @media(max-width: 425px) {
   .leftNavContainer {
     display: none;
   }
 }
-@media(max-width: 375px) {
+@media(max-width: 1024px) {
   .leftNavContainer {
-    top: 13%;
+    top: 20%;
   }
 }
