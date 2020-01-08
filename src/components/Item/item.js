@@ -2,7 +2,7 @@ import React from 'react';
 import './item.css';
 import { inventoryData } from '../../inventoryData.js';
 import { CartContext } from '../../contexts/CartContext';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 class Item extends React.Component {
 
@@ -41,10 +41,9 @@ class Item extends React.Component {
             <button
               className="addCartButtonConst"
               onClick={() => addCart(activeItem)}>
-              <i className="fas fa-shopping-cart"></i> &nbsp;Add to Cart</button>
-            <a
-              className="backLink"
-              href="/store">Back to Store</a>
+              <i className="fas fa-shopping-cart"></i> &nbsp;Add to Cart
+            </button>
+              <Link to="/store" className="backLink">Back to Store</Link>
           </div>
         </>
         : null
