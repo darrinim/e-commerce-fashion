@@ -20,143 +20,143 @@ import Item from './components/Item/item';
 import Men from './components/Men/men';
 import Women from './components/Women/women';
 
+
 class App extends React.Component {
 
 
-
   render() {
+    return (
+      <div className="App">
+        <CartContextProvider>
+          <Switch>
 
-  return (
-    <div className="App">
+            <Route exact path="/" render={() => (
+              <>
+                <Fade
+                  distance="25%"
+                  bottom
+                  delay={300}
+                  duration={1000}
+                >
+                {/*BELOW I ADDED THOSE DIVS SO THAT REACT-REVEAL DIDN'T ADD ADDITIONAL DIVS OUTSIDE OF HEADER*/}
+                  <div>
+                    <Header />
+                    <div className="homeCompContainer">
+                      <Home />
+                    </div>
+                    <StyleOptions />
+                    <CreatedDesigned />
+                    <Reasons />
+                    <Hero />
+                    <Trending />
+                    <Footer />
+                  </div>
+                </Fade>
+              </>
+            )}/>
 
-    <CartContextProvider>
+            <Route exact path="/store" render={() => (
+              <>
+                <Fade
+                  distance="25%"
+                  bottom
+                  delay={300}
+                  duration={1000}
+                >
+                  <div>
+                    <Header/>
+                    <div className="storeContainer">
+                      <LeftNav />
+                      <Store />
+                      <RightNav />
+                    </div>
+                    <Footer />
+                  </div>
+                </Fade>
+              </>
+            )}/>
 
-    <Switch>
+            <Route exact path="/store/women" render={() => (
+              <>
+                <Fade
+                  distance="25%"
+                  bottom
+                  delay={300}
+                  duration={1000}
+                >
+                  <div>
+                    <Header />
+                      <div className="storeContainer">
+                        <LeftNav />
+                        <Women />
+                        <RightNav />
+                      </div>
+                    <Footer />
+                  </div>
+                </Fade>
+              </>
+            )}/>
 
-    <Route exact path="/" render={() => (
-      <>
-      <Fade
-        distance="25%"
-        bottom
-        delay={300}
-        duration={1000}
-      >
+            <Route exact path="/store/men" render={() => (
+              <>
+                <Fade
+                  distance="25%"
+                  bottom
+                  delay={300}
+                  duration={1000}
+                >
+                  <div>
+                  <Header />
+                    <div className="storeContainer">
+                      <LeftNav />
+                      <Men />
+                      <RightNav />
+                    </div>
+                    <Footer />
+                  </div>
+                </Fade>
+              </>
+            )}/>
 
-        <Header />
-        <div className="homeCompContainer">
-          <Home />
-        </div>
-        <StyleOptions />
-
-      </Fade>
-        <CreatedDesigned />
-        <Reasons />
-        <Hero />
-        <Trending />
-        <Footer />
-        </>
-    )}/>
-
-    <Route exact path="/store" render={() => (
-      <>
-      <Fade
-        distance="25%"
-        bottom
-        delay={300}
-        duration={1000}
-      >
-        <Header
-        />
-        <div className="storeContainer">
-          <LeftNav />
-          <Store />
-          <RightNav />
-        </div>
-        <Footer />
-      </Fade>
-      </>
-    )}/>
-
-    <Route exact path="/store/women" render={() => (
-      <>
-      <Fade
-        distance="25%"
-        bottom
-        delay={300}
-        duration={1000}
-      >
-        <Header />
-        <div className="storeContainer">
-          <LeftNav />
-          <Women />
-          <RightNav />
-        </div>
-        <Footer />
-      </Fade>
-      </>
-    )}/>
-
-    <Route exact path="/store/men" render={() => (
-      <>
-      <Fade
-        distance="25%"
-        bottom
-        delay={300}
-        duration={1000}
-      >
-        <Header />
-        <div className="storeContainer">
-          <LeftNav />
-          <Men />
-          <RightNav />
-        </div>
-        <Footer />
-      </Fade>
-      </>
-    )}/>
-
-    <Route exact path="/cart" render={() => (
-      <>
-        <Header />
-        <div className="storeContainer">
-          <LeftNav />
-          <Cart />
-          <RightNav />
-        </div>
-        <Footer />
-      </>
-    )}/>
-
-
-    <Route exact path="/store/:id" render={() => (
-      <>
-      <Fade
-        distance="25%"
-        bottom
-        delay={300}
-        duration={1000}
-      >
-        <Header
-        />
-        <div className="storeContainer">
-          <LeftNav />
-          <Item />
-          <RightNav />
-        </div>
-        <Footer />
-      </Fade>
-      </>
-    )}/>
+            <Route exact path="/cart" render={() => (
+              <>
+                <Header />
+                <div className="storeContainer">
+                  <LeftNav />
+                  <Cart />
+                  <RightNav />
+                </div>
+                <Footer />
+              </>
+            )}/>
 
 
+            <Route exact path="/store/:id" render={() => (
+              <>
+                <Fade
+                  distance="25%"
+                  bottom
+                  delay={300}
+                  duration={1000}
+                >
+                  <div>
+                    <Header/>
+                      <div className="storeContainer">
+                        <LeftNav />
+                        <Item />
+                        <RightNav />
+                      </div>
+                    <Footer />
+                  </div>
+                </Fade>
+              </>
+            )}/>
 
-    </Switch>
-
-
-    </CartContextProvider>
-    </div>
-  );
-}
+          </Switch>
+        </CartContextProvider>
+      </div>
+    );
+  }
 }
 
 export default App;

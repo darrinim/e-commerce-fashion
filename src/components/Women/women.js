@@ -42,7 +42,7 @@ class Women extends React.Component {
         <div className="itemWrapper">
           <div className="pureTest">
 
-            <Link to={`/store/${item.id}`} onClick={() => clickItem(item.id)}>
+            <Link to={`/store/${item.id}`}>
               <img className="itemImage" src={item.img} alt={item.name} />
             </Link>
 

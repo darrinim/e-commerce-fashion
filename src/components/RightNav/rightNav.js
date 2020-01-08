@@ -27,6 +27,8 @@ class RightNav extends React.Component {
             <i class="fab fa-facebook"></i>
           </a>
         </li>
+
+
         <li className="rightNavIcon">
           <a className="icon" target= "blank" href="https://www.linkedin.com/in/darrin-im/">
             <i class="fab fa-instagram"></i>

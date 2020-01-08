@@ -15,6 +15,7 @@
   border: 4px solid white;
   opacity: 1;
   padding-bottom: 20px;
+  text-align: center;
 }
 .addCartButtonConst {
   background-color: transparent;
@@ -109,11 +110,12 @@ div.itemWrapper:hover{
   }
   .addCartButtonConst {
     display: flex;
-    padding: 0;
+    padding: 5px;
     margin: 0 auto;
   }
   .itemWrapper {
     width: 90%;
+    text-align: center;
   }
 }
 /* .pureTest::after {

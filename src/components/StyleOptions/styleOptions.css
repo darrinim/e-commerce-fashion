@@ -50,3 +50,14 @@
   font-weight: 300;
   text-shadow: 1px 1px black;
 }
+@media (max-width: 425px) {
+  .styleOptions {
+    padding: 2px 2px 2px 0;
+  }
+  .styleOptions:last-of-type {
+    padding: 2px 0px 2px 2px;
+  }
+  .styleOptionsContainer {
+    width: 100%;
+  }
+}
