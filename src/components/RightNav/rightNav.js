@@ -18,7 +18,6 @@ class RightNav extends React.Component {
       <ul className="rightNavWrap sideNav">
         <li className="rightNavIcon cartImg">
           <Link to='/cart' className="cart">
-{/*            <i className="fas fa-shopping-cart"></i>*/}
             <img className="newCart" src="https://res.cloudinary.com/darrin-im/image/upload/v1576522113/cart-icon_orxkjo.png" />
             <span className="cartNumber">&nbsp;{cartTotalItems}</span>
           </Link>
@@ -28,6 +27,8 @@ class RightNav extends React.Component {
             <i class="fab fa-facebook"></i>
           </a>
         </li>
+
+
         <li className="rightNavIcon">
           <a className="icon" target= "blank" href="https://www.linkedin.com/in/darrin-im/">
             <i class="fab fa-instagram"></i>

@@ -1,5 +1,5 @@
 .cartContainer {
-  width: 100%;
+  width: 85%;
   margin: 0 auto;
   flex-wrap: wrap;
   /* display: flex; */
@@ -46,7 +46,7 @@
   margin-right: auto;
 }
 .cart {
-  margin: auto 0;
+  /* margin: auto 0; */
 }
 
 @media (max-width: 768px) {
@@ -65,7 +65,7 @@
     margin: auto;
   }
   .cart {
-    justify-content: center;
+    /* justify-content: center; */
     margin: 5px;
   }
   .cartTitle {

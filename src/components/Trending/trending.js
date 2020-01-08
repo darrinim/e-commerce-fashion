@@ -21,6 +21,7 @@ class Trending extends React.Component {
         slidesToShow= {3}
         autoplay= { true }
         wrapAround= { true }
+        width='95%'
       >
         <div className="trendingImage">
           <Link to="/store">

@@ -12,8 +12,11 @@ class Header extends React.Component {
     const { removeCart, getCart, handleAddToCart, addCart, cartItems, cartCounter, items } = this.context;
     const cartTotalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
   return(
-
+  <div className="headerOuterContainer">
+  <Menu>
     <div className="headerContainer">
+
+
       <div className="headerOuterWrap">
         <ul className="headerWrap">
           <Link className="title" to="/">
@@ -33,10 +36,20 @@ class Header extends React.Component {
           </Link>
         </ul>
       </div>
+
+
+
+    </div>
+    </Menu>
+    {/* BELOW WAS NECESSARY TO GET STORE TITLE OUTSIDE OF BURGER MENU AND POSITIONED CORRECTLY */}
+    <div className="titleWrapper">
       <Link className="title" to="/">
         <h1 className="storeTitle"><span className="sonnen">Sonnen</span>brille</h1>
       </Link>
     </div>
+
+</div>
+
 
   )
 }

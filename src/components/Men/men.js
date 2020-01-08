@@ -3,6 +3,7 @@ import { inventoryData } from '../../inventoryData.js';
 import { CartContext } from '../../contexts/CartContext';
 import { Route, Link } from 'react-router-dom';
 import Item from '../../components/Item/item';
+import '../../components/Store/Inventory/inventory.css';
 
 class Men extends React.Component {
 
@@ -43,7 +44,7 @@ class Men extends React.Component {
         <div className="itemWrapper">
           <div className="pureTest">
 
-            <Link to={`/store/${item.id}`} onClick={() => clickItem(item.id)}>
+            <Link to={`/store/${item.id}`}>
               <img className="itemImage" src={item.img} alt={item.name} />
             </Link>
 

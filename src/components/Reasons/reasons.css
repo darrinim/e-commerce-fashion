@@ -20,3 +20,8 @@
   margin: 0 auto;
   font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
+@media (max-width: 425px) {
+  .reasonText {
+    font-size: calc(10px + (24 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+}
