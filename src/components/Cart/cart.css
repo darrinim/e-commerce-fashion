@@ -37,6 +37,9 @@
 .cartTypeFirst {
   margin-right: auto;
 }
+.cartImage {
+  width: 75%;
+}
 
 @media (max-width: 700px) {
   .cartWrapper {
@@ -54,9 +57,28 @@
   .cartTitle {
     text-align: center;
   }
+  .cartImageLink {
+    margin: 0 auto;
+  }
 }
-@media (max-width: 768px) {
+@media (max-width: 425px) {
+  .cartImageLink {
+    margin: 0 auto;
+  }
   .cartImage {
-    width: 50%;
+    width: 75%;
+  }
+}
+@media (min-width: 768px) {
+  .cartImage {
+    width: 100%;
+  }
+  .cartImageLink {
+    width: 40%;
+  }
+}
+@media (min-width: 1024px) {
+  .cartImageLink {
+    width: 40%;
   }
 }

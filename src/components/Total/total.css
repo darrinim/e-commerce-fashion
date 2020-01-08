@@ -5,6 +5,9 @@
 .continue {
   color: black;
 }
+.continueLink {
+  color: black;
+}
 .checkoutContainer {
   text-align: right;
   text-transform: uppercase;

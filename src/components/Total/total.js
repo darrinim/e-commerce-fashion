@@ -23,7 +23,7 @@ class Total extends React.Component {
           </>
           :
           <div className="cartTotal">
-            <Link to="/store">
+            <Link className="continueLink" to="/store">
               <h3 className="continue">Continue Shopping</h3>
             </Link>
             <h3>Subtotal ${ subtotal }</h3>

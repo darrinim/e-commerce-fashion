@@ -43,7 +43,7 @@ class Cart extends React.Component {
               <button className="removeButton" onClick={() => removeCart(item.id)}>
                 <i class="fas fa-times"></i>
               </button>
-              <Link to={`/store/${item.id}`}>
+              <Link className="cartImageLink" to={`/store/${item.id}`}>
                 <img className="cartImage" src={item.img} />
               </Link>
               <p className="cart">{item.name}</p>

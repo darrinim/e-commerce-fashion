@@ -28,7 +28,7 @@ class Inventory extends React.Component {
 
   render() {
 
-    const { removeCart, addCart, cartItems, cartCounter, items, clickItem } = this.context;
+    const { addCart } = this.context;
 
 
     return(
