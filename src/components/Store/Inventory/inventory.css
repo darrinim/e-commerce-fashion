@@ -103,6 +103,19 @@ div.itemWrapper:hover{
   width: 80%;
   padding: 20px;
 }
+@media (max-width:425px) {
+  .itemImage {
+    padding: 20px 0;
+  }
+  .addCartButtonConst {
+    display: flex;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .itemWrapper {
+    width: 90%;
+  }
+}
 /* .pureTest::after {
   content: "";
   display: block;
