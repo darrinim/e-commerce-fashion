@@ -37,7 +37,7 @@ class App extends React.Component {
             <Route exact path="/" render={() => (
               <>
                 <Fade
-                  distance="25%"
+                  distance="5%"
                   bottom
                   delay={300}
                   duration={1000}
