@@ -23,21 +23,21 @@ const Contact = () => {
         </div>
         <div className="customerWrap">
           <h4 className="contactTitle">Customers:</h4>
-          <a href="https://www.linkedin.com/in/darrin-im/" className="contactLink">care@sonnenbrille.com</a>
+          <a target= "blank" href="https://www.linkedin.com/in/darrin-im/" className="contactLink">care@sonnenbrille.com</a>
         </div>
         <div className="businessWrap">
           <h4 className="contactTitle">Business:</h4>
-          <a href="https://www.linkedin.com/in/darrin-im/" className="contactLink">business@sonnenbrille.com</a>
+          <a target= "blank" href="https://www.linkedin.com/in/darrin-im/" className="contactLink">business@sonnenbrille.com</a>
         </div>
       </div>
 
       <div className="contactLinksWrap">
         <ul className="linksInnerWrap">
-          <li><a href="https://www.linkedin.com/in/darrin-im/">Help</a></li>
-          <li><a href="https://www.linkedin.com/in/darrin-im/">Shipping Details</a></li>
-          <li><a href="https://www.linkedin.com/in/darrin-im/">Terms & Conditions</a></li>
-          <li><a href="https://www.linkedin.com/in/darrin-im/">Privacy Policy</a></li>
-          <li><a href="https://www.linkedin.com/in/darrin-im/">Cookie Policy</a></li>
+          <li><a target="blank" href="https://www.linkedin.com/in/darrin-im/">Help</a></li>
+          <li><a target="blank" href="https://www.linkedin.com/in/darrin-im/">Shipping Details</a></li>
+          <li><a target="blank" href="https://www.linkedin.com/in/darrin-im/">Terms & Conditions</a></li>
+          <li><a target="blank" href="https://www.linkedin.com/in/darrin-im/">Privacy Policy</a></li>
+          <li><a target="blank" href="https://www.linkedin.com/in/darrin-im/">Cookie Policy</a></li>
         </ul>
       </div>
 

@@ -29,7 +29,7 @@
 .optionImage:hover {
   cursor: pointer;
   transform: scale(1.05);
-  filter: blur(2px)
+  filter: blur(1.4px)
 }
 @media (max-width: 425px) {
   .styleOptions {

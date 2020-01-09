@@ -4,6 +4,7 @@ import { inventoryData } from '../../inventoryData.js';
 import { CartContext } from '../../contexts/CartContext';
 import Total from '../../components/Total/total';
 import { Link } from 'react-router-dom';
+import Fade from 'react-reveal/Fade';
 
 class Cart extends React.Component {
 
@@ -25,6 +26,7 @@ class Cart extends React.Component {
     //   cartItems: items
     // });
 
+    window.scrollTo(0, 0);
   }
 
   static contextType = CartContext;
@@ -34,27 +36,34 @@ class Cart extends React.Component {
     const { cartItems, removeCart } = this.context;
 
     return(
-      <div className="cartContainer">
-        <h2 className="cartTitle">Shopping Cart</h2>
-        <div className="cartouterWrapper">
-        {cartItems.map( item => {
-          return(
-            <div className="cartWrapper">
-              <button className="removeButton" onClick={() => removeCart(item.id)}>
-                <i class="fas fa-times"></i>
-              </button>
-              <Link className="cartImageLink" to={`/store/${item.id}`}>
-                <img className="cartImage" src={item.img} />
-              </Link>
-              <p className="cart">{item.name}</p>
-              <p className="cart">Quantity:&nbsp;{item.quantity}</p>
-              <p className="cart">${item.price}</p>
-            </div>
-          )
-        })}
+      <Fade
+        distance="25%"
+        bottom
+        delay={300}
+        duration={1000}
+      >
+        <div className="cartContainer">
+          <h2 className="cartTitle">Shopping Cart</h2>
+          <div className="cartouterWrapper">
+          {cartItems.map( item => {
+            return(
+              <div className="cartWrapper">
+                <button className="removeButton" onClick={() => removeCart(item.id)}>
+                  <i class="fas fa-times"></i>
+                </button>
+                <Link className="cartImageLink" to={`/store/${item.id}`}>
+                  <img className="cartImage" src={item.img} />
+                </Link>
+                <p className="cart">{item.name}</p>
+                <p className="cart">Quantity:&nbsp;{item.quantity}</p>
+                <p className="cart">${item.price}</p>
+              </div>
+            )
+          })}
+          </div>
+          <Total />
         </div>
-        <Total />
-      </div>
+      </Fade>
     )
   }
 }

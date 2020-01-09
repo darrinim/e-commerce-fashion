@@ -40,9 +40,13 @@ class Header extends React.Component {
       </Menu>
       {/* BELOW WAS NECESSARY TO GET STORE TITLE OUTSIDE OF BURGER MENU AND POSITIONED CORRECTLY */}
       <div className="titleWrapper">
-        <Link className="title" to="/">
-          <h1 className="storeTitle"><span className="sonnen">Sonnen</span>brille</h1>
-        </Link>
+
+          <h1 className="storeTitle">
+            <Link className="title" to="/">
+              <span className="sonnen">Sonnen</span>brille
+            </Link>
+          </h1>
+
       </div>
     </div>
     )

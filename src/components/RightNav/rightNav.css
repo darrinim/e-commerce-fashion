@@ -20,7 +20,7 @@
   top: 0;
 }
 .rightNavIcon {
-  font-size: calc(10px + (20 - 10) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(19px + (20 - 19) * ((100vw - 300px) / (1600 - 300)));
   margin-bottom: calc(0.5rem + (90 - 0.5) * ((100vw - 300px) / (1600 - 300)));
   color: black;
 }
@@ -68,6 +68,9 @@
   .rightNavContainer {
     top: 20%;
   }
+  .newCart {
+    width: 38%;
+}
 }
 @media (max-width: 1024px) {
   .rightNavContainer {

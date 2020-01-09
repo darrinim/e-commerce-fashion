@@ -23,7 +23,6 @@ class CartContextProvider extends Component {
   getTotal = () => {
     let getCart = JSON.parse(localStorage.getItem('cart') || "[]")
     let total = getCart.reduce((total, item) => total + item.quantity * item.price, 0)
-    console.log('looooook here', total);
     this.setState({
       subtotal: total
     })
@@ -74,14 +73,12 @@ class CartContextProvider extends Component {
     // pass in id of item that we select
     let getCart = JSON.parse(localStorage.getItem('cart') || "[]")
     // get items from cart in local storage
-    console.log('this is the original getCart', getCart);
 
     let removeItem = getCart.find( item => {
       return item.id === id
     })
 
     let cart = getCart.filter( items => {
-      console.log('cart items.id =', items.id);
       return items.id !== id
     }) // filters through cart and returns items where id doesn't match the selected
 
@@ -96,8 +93,6 @@ class CartContextProvider extends Component {
   getCart = () => {
     // gets all items in cart in local storage
     let getCart = JSON.parse(localStorage.getItem('cart') || "[]")
-
-    console.log('this is getCart initial', getCart);
     this.setState({
       cartItems: getCart
     });
@@ -109,7 +104,6 @@ class CartContextProvider extends Component {
   }
 
   render() {
-    console.log('this is cartItems state', this.state.cartItems);
     return (
       // context provider allows us to send state/functions to it's children
       <CartContext.Provider

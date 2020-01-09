@@ -76,6 +76,10 @@
   .cartImageLink {
     width: 40%;
   }
+  .cartNumber {
+    right: 22%;
+    bottom: 85%;
+  }
 }
 @media (min-width: 1024px) {
   .cartImageLink {

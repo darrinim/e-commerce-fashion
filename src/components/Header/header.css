@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Baskervville|Cinzel|Cormorant+Garamond:400,500|Gupter:400,500|Josefin+Slab:400,600,700|Noto+Serif+KR:400,600|Raleway:300,400,500,600,700&display=swap|Prata|Spectral:400,500&display=swap');
 
+
 body {
   background-color: #FFF7F2;
   font-family: 'Raleway';
@@ -49,7 +50,7 @@ body {
 .title > li {
   border-bottom: 1px solid #FFF7F2;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1em;
 }
 .title > li:hover {
   color: rgba(0,0,0,0.6);
@@ -58,7 +59,7 @@ body {
   content: '';
   display: block;
   margin: 0 auto;
-  width: 40%;
+  width: 100%;
   padding-top: 3px;
   border-bottom: 1px solid #FFF7F2;
 }
@@ -122,7 +123,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-menu {
   background: #FFF7F2;
   padding: 2.5em 1.5em 0;
-  font-size: 1.15em;
+  font-size: 1.5em;
 }
 
 /* Morph shape necessary with bubble or elastic */
