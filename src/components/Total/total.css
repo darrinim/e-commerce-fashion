@@ -19,6 +19,9 @@
   color: white;
   cursor: pointer;
   border: none;
+  /* position: absolute;
+  bottom: 0;
+  right: 20px; */
 }
 .checkoutContainer > p:first-child {
   margin: 0;
