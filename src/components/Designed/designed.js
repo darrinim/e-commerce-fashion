@@ -10,7 +10,7 @@ const Designed = () => {
       <Fade distance="20px" left>
         <div className="designedTextWrapper">
           <h2 className="creDesTextTitle">Designed</h2>
-          <p className="creDesText">With you in mind and some other stuff about how we designed with you in mind and we're the shit. Here's another sentence because just the last one looked really short.</p>
+          <p className="creDesText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
         </div>
       </Fade>
       <Fade distance="20px" right>
