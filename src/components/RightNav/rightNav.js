@@ -18,7 +18,7 @@ class RightNav extends React.Component {
         <ul className="rightNavWrap sideNav">
           <li className="rightNavIcon cartImg">
             <Link to='/cart' className="cart">
-              <img className="newCart" src="https://res.cloudinary.com/darrin-im/image/upload/v1576522113/cart-icon_orxkjo.png" />
+              <img alt="cart" className="newCart" src="https://res.cloudinary.com/darrin-im/image/upload/v1576522113/cart-icon_orxkjo.png" />
               <span className="cartNumber">&nbsp;{cartTotalItems > 0 ? cartTotalItems : null}</span>
             </Link>
           </li>

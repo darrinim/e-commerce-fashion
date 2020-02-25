@@ -49,7 +49,6 @@ class CartContextProvider extends Component {
         localStorage.setItem('cart', JSON.stringify(this.state.cartItems))
       })
     }
-    // console.log('PLEASE WORK ADDCART', this.state.cartItems);
   }
 
   // removeCart = (id) => {

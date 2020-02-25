@@ -7,7 +7,7 @@ import CreatedDesigned from './components/CreatedDesigned/createdDesigned';
 import Reasons from './components/Reasons/reasons';
 import Fade from 'react-reveal/Fade';
 import Trending from './components/Trending/trending';
-import { Route, Switch, withRouter } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import LeftNav from './components/LeftNav/leftNav';
 import RightNav from './components/RightNav/rightNav';
 import Store from './components/Store/store';
